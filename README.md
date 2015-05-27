@@ -4,3 +4,6 @@ SPECPAR is a compilation of several codes compiled in different languages. The r
 Some of the codes are only available upon request.
 
 TBD...
+
+wget --user [user_name] --password [Password] http://www.astro.up.pt/~sousasag/protected/codes_specpar.tar
+
