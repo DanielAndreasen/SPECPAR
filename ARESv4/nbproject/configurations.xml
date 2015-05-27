@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="94">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>areslib.h</itemPath>
+      <itemPath>filesio.h</itemPath>
+      <itemPath>ngaussfdf.h</itemPath>
+      <itemPath>rvcor.h</itemPath>
+      <itemPath>sn_rejt_estimator.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>ARES_v2.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+      <itemPath>lambda_rejt.opt</itemPath>
+      <itemPath>mine.opt</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandLine>-lgomp -fopenmp</commandLine>
+        </cTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>-lcfitsio -lgsl -lgslcblas -lm</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="ARES_v2.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="areslib.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="filesio.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ngaussfdf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rvcor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sn_rejt_estimator.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+      </compileType>
+      <item path="ARES_v2.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="areslib.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="filesio.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ngaussfdf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="rvcor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sn_rejt_estimator.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

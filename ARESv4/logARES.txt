@@ -1,0 +1,2821 @@
+Input File ARES...
+Input Parameters:
+
+specfits: sun_harps_ganymede.fits
+readlinedat: linelist.dat
+fileout: test.cmine
+lambdai: 3600.0
+lambdaf: 9000.0
+smoothder: 4.0
+space: 3.00 
+rejt: -2
+
+lineresol: 0.100
+miniline: 2.0
+plots_flag: 1
+
+Log Result ARES...
+Velocidade radial: 0.000000
+Rejt used for computations: USING lambda_rejt.opt file to rejt dependence on lambda
+Updated limit spectra: [3783.143905 - 6913.320945 ]
+
+
+line nº 1 searching for line 4000.01 in the interval [3783.14,6913.32]. Using rejt 0.992000 
+
+
+ LINES FOUND TO FIT 
+4000.03 4000.26 4000.47 4000.82 4001.17 4001.45 4001.67 
+
+ RESAMPLING 
+4000.03 4000.26 4000.47 4000.82 4001.17 4001.45 4001.67 
+
+ GUESS COEFS :
+acoef[ 0]:  0.93785 acoef[ 1]:  400.00000 acoef[ 2]:  4000.03 
+acoef[ 3]:  0.35767 acoef[ 4]:  400.00000 acoef[ 5]:  4000.26 
+acoef[ 6]:  0.28107 acoef[ 7]:  400.00000 acoef[ 8]:  4000.47 
+acoef[ 9]:  0.86731 acoef[10]:  400.00000 acoef[11]:  4000.82 
+acoef[12]:  0.40285 acoef[13]:  400.00000 acoef[14]:  4001.17 
+acoef[15]:  0.45620 acoef[16]:  400.00000 acoef[17]:  4001.45 
+acoef[18]:  0.21245 acoef[19]:  400.00000 acoef[20]:  4001.67 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.92952 acoef[ 1]:  406.58065 acoef[ 2]:  4000.03 
++-ac_er[ 0]:  0.01372 ac_er[ 1]:  182.84368 ac_er[ 2]:   0.007883 
+::acoef[ 3]:  0.37998 acoef[ 4]:  271.61229 acoef[ 5]:  4000.26 
++-ac_er[ 3]:  0.01248 ac_er[ 4]:   13.80845 ac_er[ 5]:   0.001050 
+::acoef[ 6]:  0.33710 acoef[ 7]:  155.20587 acoef[ 8]:  4000.45 
++-ac_er[ 6]:  0.01098 ac_er[ 7]:    6.54454 ac_er[ 8]:   0.001118 
+::acoef[ 9]:  0.89296 acoef[10]:   83.88206 acoef[11]:  4000.82 
++-ac_er[ 9]:  0.00933 ac_er[10]:   18.31095 ac_er[11]:   0.008053 
+::acoef[12]:  0.41909 acoef[13]:   63.65757 acoef[14]:  4001.15 
++-ac_er[12]:  0.00883 ac_er[13]:    2.48397 ac_er[14]:   0.001587 
+::acoef[15]:  0.47239 acoef[16]:  294.81570 acoef[17]:  4001.44 
++-ac_er[15]:  0.01269 ac_er[16]:   16.88974 ac_er[17]:   0.001161 
+::acoef[18]:  0.23635 acoef[19]:  175.15582 acoef[20]:  4001.67 
++-ac_er[18]:  0.01115 ac_er[19]:    5.96182 ac_er[20]:   0.000900 
+
+---------------------------
+line result: 4000.01001 
+ew (mA)      :  6.19509 
+ew error (mA):  1.84259 
+nfit : 7 
+line depth : 0.07048 
+FWHM : 0.08258 
+-------------------------
+int 2 status: 0
+
+line nº 2 searching for line 4007.27 in the interval [3783.14,6913.32]. Using rejt 0.992000 
+
+
+ LINES FOUND TO FIT 
+4007.29 4007.45 
+
+ RESAMPLING 
+4007.29 4007.45 
+
+ GUESS COEFS :
+acoef[ 0]:  0.22829 acoef[ 1]:  400.00000 acoef[ 2]:  4007.29 
+acoef[ 3]:  0.94749 acoef[ 4]:  400.00000 acoef[ 5]:  4007.45 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.22539 acoef[ 1]:  267.83264 acoef[ 2]:  4007.27 
++-ac_er[ 0]:  0.00453 ac_er[ 1]:    3.72205 ac_er[ 2]:   0.000292 
+::acoef[ 3]:  0.94271 acoef[ 4]:  545.59357 acoef[ 5]:  4007.44 
++-ac_er[ 3]:  0.00546 ac_er[ 4]:  130.51947 ac_er[ 5]:   0.003372 
+
+---------------------------
+line result: 4007.27002 
+ew (mA)      :  83.89265 
+ew error (mA):  0.76157 
+nfit : 2 
+line depth : 0.77461 
+FWHM : 0.10174 
+-------------------------
+int 2 status: 0
+
+line nº 3 searching for line 4010.18 in the interval [3783.14,6913.32]. Using rejt 0.992000 
+
+
+ LINES FOUND TO FIT 
+4009.55 4009.73 4009.99 4010.18 4010.37 4010.60 4010.78 4010.94 4011.09 
+
+ RESAMPLING 
+4009.55 4009.73 4009.99 4010.18 4010.37 4010.60 4010.78 4010.94 4011.09 
+
+ GUESS COEFS :
+acoef[ 0]:  0.56752 acoef[ 1]:  400.00000 acoef[ 2]:  4009.55 
+acoef[ 3]:  0.14462 acoef[ 4]:  400.00000 acoef[ 5]:  4009.73 
+acoef[ 6]:  0.84507 acoef[ 7]:  400.00000 acoef[ 8]:  4009.99 
+acoef[ 9]:  0.63568 acoef[10]:  400.00000 acoef[11]:  4010.18 
+acoef[12]:  0.89561 acoef[13]:  400.00000 acoef[14]:  4010.37 
+acoef[15]:  0.38586 acoef[16]:  400.00000 acoef[17]:  4010.60 
+acoef[18]:  0.52570 acoef[19]:  400.00000 acoef[20]:  4010.78 
+acoef[21]:  0.50577 acoef[22]:  400.00000 acoef[23]:  4010.94 
+acoef[24]:  0.92657 acoef[25]:  400.00000 acoef[26]:  4011.09 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.57702 acoef[ 1]:  440.85296 acoef[ 2]:  4009.54 
++-ac_er[ 0]:  0.00670 ac_er[ 1]:   18.49420 ac_er[ 2]:   0.000694 
+::acoef[ 3]:  0.12522 acoef[ 4]:  143.29995 acoef[ 5]:  4009.71 
++-ac_er[ 3]:  0.00522 ac_er[ 4]:    2.41136 ac_er[ 5]:   0.000437 
+::acoef[ 6]:  0.85553 acoef[ 7]:  165.21973 acoef[ 8]:  4009.97 
++-ac_er[ 6]:  0.00528 ac_er[ 7]:   14.73109 ac_er[ 8]:   0.002369 
+::acoef[ 9]:  0.64862 acoef[10]:  430.29864 acoef[11]:  4010.17 
++-ac_er[ 9]:  0.00773 ac_er[10]:   23.11265 ac_er[11]:   0.000774 
+::acoef[12]:  0.90330 acoef[13]:   21.36212 acoef[14]:  4010.46 
++-ac_er[12]:  0.00511 ac_er[13]:    5.71836 ac_er[14]:   0.023275 
+::acoef[15]:  0.45794 acoef[16]:  312.74992 acoef[17]:  4010.58 
++-ac_er[15]:  0.01549 ac_er[16]:   18.25738 ac_er[17]:   0.000711 
+::acoef[18]:  0.53225 acoef[19]:  299.52546 acoef[20]:  4010.77 
++-ac_er[18]:  0.01046 ac_er[19]:   16.81620 ac_er[20]:   0.000881 
+::acoef[21]:  0.50388 acoef[22]:  351.03062 acoef[23]:  4010.93 
++-ac_er[21]:  0.00665 ac_er[22]:   12.32604 ac_er[23]:   0.000592 
+::acoef[24]:  0.92718 acoef[25]:  370.69272 acoef[26]:  4011.08 
++-ac_er[24]:  0.00649 ac_er[25]:   83.88510 ac_er[26]:   0.003875 
+
+---------------------------
+line result: 4010.17993 
+ew (mA)      :  30.02397 
+ew error (mA):  1.04246 
+nfit : 9 
+line depth : 0.35138 
+FWHM : 0.08027 
+-------------------------
+int 2 status: 0
+
+line nº 4 searching for line 4014.27 in the interval [3783.14,6913.32]. Using rejt 0.992000 
+
+
+ LINES FOUND TO FIT 
+4014.28 4014.54 4014.94 4015.16 
+
+ RESAMPLING 
+4014.28 4014.54 4014.94 4015.16 
+
+ GUESS COEFS :
+acoef[ 0]:  0.49219 acoef[ 1]:  400.00000 acoef[ 2]:  4014.28 
+acoef[ 3]:  0.15347 acoef[ 4]:  400.00000 acoef[ 5]:  4014.54 
+acoef[ 6]:  0.75599 acoef[ 7]:  400.00000 acoef[ 8]:  4014.94 
+acoef[ 9]:  0.87396 acoef[10]:  400.00000 acoef[11]:  4015.16 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.49211 acoef[ 1]:  384.28470 acoef[ 2]:  4014.27 
++-ac_er[ 0]:  0.01412 ac_er[ 1]:   24.74124 ac_er[ 2]:   0.001158 
+::acoef[ 3]:  0.15699 acoef[ 4]:  128.51782 acoef[ 5]:  4014.53 
++-ac_er[ 3]:  0.01074 ac_er[ 4]:    3.79241 ac_er[ 5]:   0.000917 
+::acoef[ 6]:  0.76235 acoef[ 7]:  206.24575 acoef[ 8]:  4014.93 
++-ac_er[ 6]:  0.01209 ac_er[ 7]:   24.31028 ac_er[ 8]:   0.002891 
+::acoef[ 9]:  0.87379 acoef[10]:  349.86046 acoef[11]:  4015.15 
++-ac_er[ 9]:  0.01380 ac_er[10]:   88.69503 ac_er[11]:   0.004773 
+
+---------------------------
+line result: 4014.27002 
+ew (mA)      :  45.92184 
+ew error (mA):  1.95304 
+nfit : 4 
+line depth : 0.50789 
+FWHM : 0.08494 
+-------------------------
+int 2 status: 0
+
+line nº 5 searching for line 4080.88 in the interval [3783.14,6913.32]. Using rejt 0.992000 
+
+
+ LINES FOUND TO FIT 
+4080.89 4081.27 4081.45 
+
+ RESAMPLING 
+4080.89 4081.27 4081.45 
+
+ GUESS COEFS :
+acoef[ 0]:  0.39681 acoef[ 1]:  400.00000 acoef[ 2]:  4080.89 
+acoef[ 3]:  0.47455 acoef[ 4]:  400.00000 acoef[ 5]:  4081.27 
+acoef[ 6]:  0.95559 acoef[ 7]:  400.00000 acoef[ 8]:  4081.45 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.40620 acoef[ 1]:  328.80711 acoef[ 2]:  4080.88 
++-ac_er[ 0]:  0.00664 ac_er[ 1]:    8.48913 ac_er[ 2]:   0.000503 
+::acoef[ 3]:  0.47677 acoef[ 4]:  230.71372 acoef[ 5]:  4081.25 
++-ac_er[ 3]:  0.00612 ac_er[ 4]:    6.40223 ac_er[ 5]:   0.000630 
+::acoef[ 6]:  0.95390 acoef[ 7]:  461.60794 acoef[ 8]:  4081.43 
++-ac_er[ 6]:  0.00746 ac_er[ 7]:  199.69074 ac_er[ 8]:   0.006358 
+
+---------------------------
+line result: 4080.87988 
+ew (mA)      :  58.04241 
+ew error (mA):  0.99119 
+nfit : 3 
+line depth : 0.59380 
+FWHM : 0.09183 
+-------------------------
+int 2 status: 0
+
+line nº 6 searching for line 4114.94 in the interval [3783.14,6913.32]. Using rejt 0.992000 
+
+
+ LINES FOUND TO FIT 
+4114.46 4114.76 4114.95 4115.18 4115.39 
+
+ RESAMPLING 
+4114.46 4114.76 4114.95 4115.18 4115.39 
+
+ GUESS COEFS :
+acoef[ 0]:  0.21703 acoef[ 1]:  400.00000 acoef[ 2]:  4114.46 
+acoef[ 3]:  0.94475 acoef[ 4]:  400.00000 acoef[ 5]:  4114.76 
+acoef[ 6]:  0.37319 acoef[ 7]:  400.00000 acoef[ 8]:  4114.95 
+acoef[ 9]:  0.29857 acoef[10]:  400.00000 acoef[11]:  4115.18 
+acoef[12]:  0.91131 acoef[13]:  400.00000 acoef[14]:  4115.39 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.26319 acoef[ 1]:  239.81490 acoef[ 2]:  4114.45 
++-ac_er[ 0]:  0.00546 ac_er[ 1]:    4.47903 ac_er[ 2]:   0.000339 
+::acoef[ 3]:  0.94332 acoef[ 4]:   15.01290 acoef[ 5]:  4114.58 
++-ac_er[ 3]:  0.00325 ac_er[ 4]:    1.98214 ac_er[ 5]:   0.014695 
+::acoef[ 6]:  0.37816 acoef[ 7]:  346.06760 acoef[ 8]:  4114.94 
++-ac_er[ 6]:  0.00484 ac_er[ 7]:    6.62194 ac_er[ 8]:   0.000331 
+::acoef[ 9]:  0.28263 acoef[10]:  204.08026 acoef[11]:  4115.17 
++-ac_er[ 9]:  0.00402 ac_er[10]:    2.68852 ac_er[11]:   0.000321 
+::acoef[12]:  0.90719 acoef[13]:  409.49057 acoef[14]:  4115.37 
++-ac_er[12]:  0.00479 ac_er[13]:   49.61993 ac_er[14]:   0.002085 
+
+---------------------------
+line result: 4114.93994 
+ew (mA)      :  59.24773 
+ew error (mA):  0.73080 
+nfit : 5 
+line depth : 0.62184 
+FWHM : 0.08951 
+-------------------------
+int 2 status: 0
+
+line nº 7 searching for line 5501.48 in the interval [3783.14,6913.32]. Using rejt 0.993003 
+
+
+ LINES FOUND TO FIT 
+5501.19 5501.48 5501.87 5502.09 
+
+ RESAMPLING 
+5501.19 5501.48 5501.87 5502.09 
+
+ GUESS COEFS :
+acoef[ 0]:  0.97651 acoef[ 1]:  400.00000 acoef[ 2]:  5501.19 
+acoef[ 3]:  0.27913 acoef[ 4]:  400.00000 acoef[ 5]:  5501.48 
+acoef[ 6]:  0.96257 acoef[ 7]:  400.00000 acoef[ 8]:  5501.87 
+acoef[ 9]:  0.85534 acoef[10]:  400.00000 acoef[11]:  5502.09 
+
+ FITTED COEFS :
+::acoef[ 0]:  1.01878 acoef[ 1]:   93.64000 acoef[ 2]:  5501.40 
++-ac_er[ 0]:  0.25754 ac_er[ 1]:  754.59330 ac_er[ 2]:   1.012429 
+::acoef[ 3]:  0.31429 acoef[ 4]:  137.66840 acoef[ 5]:  5501.47 
++-ac_er[ 3]:  0.35843 ac_er[ 4]:   16.35031 ac_er[ 5]:   0.008404 
+::acoef[ 6]:  0.94258 acoef[ 7]:    7.16710 acoef[ 8]:  5501.60 
++-ac_er[ 6]:  0.00276 ac_er[ 7]:    0.72817 ac_er[ 8]:   0.017257 
+::acoef[ 9]:  0.86801 acoef[10]:  198.96009 acoef[11]:  5502.09 
++-ac_er[ 9]:  0.00317 ac_er[10]:   11.88448 ac_er[11]:   0.001287 
+
+---------------------------
+line result: 5501.47998 
+ew (mA)      :  100.14531 
+ew error (mA):  72.06163 
+nfit : 4 
+int 2 status: 0
+
+line nº 8 searching for line 5522.45 in the interval [3783.14,6913.32]. Using rejt 0.993045 
+
+
+ LINES FOUND TO FIT 
+5522.46 
+
+ RESAMPLING 
+5522.46 
+
+ GUESS COEFS :
+acoef[ 0]:  0.65365 acoef[ 1]:  400.00000 acoef[ 2]:  5522.46 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.65363 acoef[ 1]:  204.62334 acoef[ 2]:  5522.45 
++-ac_er[ 0]:  0.00288 ac_er[ 1]:    3.93126 ac_er[ 2]:   0.000474 
+
+---------------------------
+line result: 5522.45020 
+ew (mA)      :  42.91749 
+ew error (mA):  0.54516 
+nfit : 1 
+line depth : 0.34637 
+FWHM : 0.11640 
+-------------------------
+int 2 status: 0
+
+line nº 9 searching for line 5534.66 in the interval [3783.14,6913.32]. Using rejt 0.993069 
+
+
+ LINES FOUND TO FIT 
+5534.67 5534.85 
+
+ RESAMPLING 
+5534.67 5534.85 
+
+ GUESS COEFS :
+acoef[ 0]:  0.91677 acoef[ 1]:  400.00000 acoef[ 2]:  5534.67 
+acoef[ 3]:  0.56702 acoef[ 4]:  400.00000 acoef[ 5]:  5534.85 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.91564 acoef[ 1]:  240.25320 acoef[ 2]:  5534.66 
++-ac_er[ 0]:  0.00302 ac_er[ 1]:   23.05790 ac_er[ 2]:   0.002062 
+::acoef[ 3]:  0.56844 acoef[ 4]:  182.38984 acoef[ 5]:  5534.84 
++-ac_er[ 3]:  0.00284 ac_er[ 4]:    3.22651 ac_er[ 5]:   0.000429 
+
+---------------------------
+line result: 5534.66016 
+ew (mA)      :  9.64693 
+ew error (mA):  0.57760 
+nfit : 2 
+line depth : 0.08436 
+FWHM : 0.10743 
+-------------------------
+int 2 status: 0
+
+line nº 10 searching for line 5538.52 in the interval [3783.14,6913.32]. Using rejt 0.993077 
+
+
+ LINES FOUND TO FIT 
+5538.53 
+
+ RESAMPLING 
+5538.53 
+
+ GUESS COEFS :
+acoef[ 0]:  0.70049 acoef[ 1]:  400.00000 acoef[ 2]:  5538.53 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.70515 acoef[ 1]:  203.97337 acoef[ 2]:  5538.52 
++-ac_er[ 0]:  0.00286 ac_er[ 1]:    4.58072 ac_er[ 2]:   0.000555 
+
+---------------------------
+line result: 5538.52002 
+ew (mA)      :  36.59177 
+ew error (mA):  0.54324 
+nfit : 1 
+line depth : 0.29485 
+FWHM : 0.11659 
+-------------------------
+int 2 status: 0
+
+line nº 11 searching for line 5543.94 in the interval [3783.14,6913.32]. Using rejt 0.993088 
+
+
+ LINES FOUND TO FIT 
+5543.95 5544.20 
+
+ RESAMPLING 
+5543.95 5544.20 
+
+ GUESS COEFS :
+acoef[ 0]:  0.53691 acoef[ 1]:  400.00000 acoef[ 2]:  5543.95 
+acoef[ 3]:  0.97013 acoef[ 4]:  400.00000 acoef[ 5]:  5544.20 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.57094 acoef[ 1]:  189.32359 acoef[ 2]:  5543.94 
++-ac_er[ 0]:  0.00454 ac_er[ 1]:    4.66086 ac_er[ 2]:   0.000485 
+::acoef[ 3]:  0.96413 acoef[ 4]:   16.42209 acoef[ 5]:  5544.04 
++-ac_er[ 3]:  0.00373 ac_er[ 4]:    3.03030 ac_er[ 5]:   0.018568 
+
+---------------------------
+line result: 5543.93994 
+ew (mA)      :  70.95829 
+ew error (mA):  9.90239 
+nfit : 2 
+int 2 status: 0
+
+line nº 12 searching for line 5546.51 in the interval [3783.14,6913.32]. Using rejt 0.993093 
+
+
+ LINES FOUND TO FIT 
+5546.52 5546.75 
+
+ RESAMPLING 
+5546.52 5546.75 
+
+ GUESS COEFS :
+acoef[ 0]:  0.60867 acoef[ 1]:  400.00000 acoef[ 2]:  5546.52 
+acoef[ 3]:  0.96986 acoef[ 4]:  400.00000 acoef[ 5]:  5546.75 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.61035 acoef[ 1]:  181.60749 acoef[ 2]:  5546.51 
++-ac_er[ 0]:  0.00280 ac_er[ 1]:    3.52204 ac_er[ 2]:   0.000485 
+::acoef[ 3]:  0.97017 acoef[ 4]:  118.53432 acoef[ 5]:  5546.73 
++-ac_er[ 3]:  0.00270 ac_er[ 4]:   36.41416 ac_er[ 5]:   0.007468 
+
+---------------------------
+line result: 5546.50977 
+ew (mA)      :  51.24882 
+ew error (mA):  0.61825 
+nfit : 2 
+line depth : 0.38965 
+FWHM : 0.12356 
+-------------------------
+int 2 status: 0
+
+line nº 13 searching for line 5547.00 in the interval [3783.14,6913.32]. Using rejt 0.993094 
+
+
+ LINES FOUND TO FIT 
+5547.00 
+
+ RESAMPLING 
+5547.00 
+
+ GUESS COEFS :
+acoef[ 0]:  0.79529 acoef[ 1]:  400.00000 acoef[ 2]:  5547.00 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.80457 acoef[ 1]:  148.65370 acoef[ 2]:  5547.00 
++-ac_er[ 0]:  0.00317 ac_er[ 1]:    5.56431 ac_er[ 2]:   0.001085 
+
+---------------------------
+line result: 5547.00000 
+ew (mA)      :  28.40986 
+ew error (mA):  0.70329 
+nfit : 1 
+line depth : 0.19543 
+FWHM : 0.13657 
+-------------------------
+int 2 status: 0
+
+line nº 14 searching for line 5553.58 in the interval [3783.14,6913.32]. Using rejt 0.993107 
+
+
+ LINES FOUND TO FIT 
+5553.59 5553.71 
+
+ RESAMPLING 
+5553.59 5553.71 
+
+ GUESS COEFS :
+acoef[ 0]:  0.66967 acoef[ 1]:  400.00000 acoef[ 2]:  5553.59 
+acoef[ 3]:  0.80089 acoef[ 4]:  400.00000 acoef[ 5]:  5553.71 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.66964 acoef[ 1]:  202.71915 acoef[ 2]:  5553.58 
++-ac_er[ 0]:  0.00381 ac_er[ 1]:    9.50177 ac_er[ 2]:   0.001560 
+::acoef[ 3]:  0.81349 acoef[ 4]:  266.75724 acoef[ 5]:  5553.70 
++-ac_er[ 3]:  0.00522 ac_er[ 4]:   21.03545 ac_er[ 5]:   0.002421 
+
+---------------------------
+line result: 5553.58008 
+ew (mA)      :  41.12644 
+ew error (mA):  1.07394 
+nfit : 2 
+line depth : 0.33036 
+FWHM : 0.11695 
+-------------------------
+int 2 status: 0
+
+line nº 15 searching for line 5560.22 in the interval [3783.14,6913.32]. Using rejt 0.993120 
+
+
+ LINES FOUND TO FIT 
+5560.22 
+
+ RESAMPLING 
+5560.22 
+
+ GUESS COEFS :
+acoef[ 0]:  0.59493 acoef[ 1]:  400.00000 acoef[ 2]:  5560.22 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.60062 acoef[ 1]:  189.72914 acoef[ 2]:  5560.21 
++-ac_er[ 0]:  0.00333 ac_er[ 1]:    3.65209 ac_er[ 2]:   0.000494 
+
+---------------------------
+line result: 5560.22021 
+ew (mA)      :  51.39141 
+ew error (mA):  0.65406 
+nfit : 1 
+line depth : 0.39938 
+FWHM : 0.12089 
+-------------------------
+int 2 status: 0
+
+line nº 16 searching for line 5567.40 in the interval [3783.14,6913.32]. Using rejt 0.993135 
+
+
+ LINES FOUND TO FIT 
+5567.27 5567.41 
+
+ RESAMPLING 
+5567.27 5567.41 
+
+ GUESS COEFS :
+acoef[ 0]:  0.86652 acoef[ 1]:  400.00000 acoef[ 2]:  5567.27 
+acoef[ 3]:  0.53657 acoef[ 4]:  400.00000 acoef[ 5]:  5567.41 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.87184 acoef[ 1]:  328.90880 acoef[ 2]:  5567.27 
++-ac_er[ 0]:  0.00382 ac_er[ 1]:   30.05810 ac_er[ 2]:   0.002091 
+::acoef[ 3]:  0.54055 acoef[ 4]:  182.59216 acoef[ 5]:  5567.39 
++-ac_er[ 3]:  0.00285 ac_er[ 4]:    4.67695 ac_er[ 5]:   0.000715 
+
+---------------------------
+line result: 5567.39990 
+ew (mA)      :  60.26647 
+ew error (mA):  0.85772 
+nfit : 2 
+line depth : 0.45945 
+FWHM : 0.12323 
+-------------------------
+int 2 status: 0
+
+line nº 17 searching for line 5577.03 in the interval [3783.14,6913.32]. Using rejt 0.993154 
+
+
+ LINES FOUND TO FIT 
+5577.03 
+
+ RESAMPLING 
+5577.03 
+
+ GUESS COEFS :
+acoef[ 0]:  0.90419 acoef[ 1]:  400.00000 acoef[ 2]:  5577.03 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.90563 acoef[ 1]:  213.44619 acoef[ 2]:  5577.02 
++-ac_er[ 0]:  0.00289 ac_er[ 1]:   15.46103 ac_er[ 2]:   0.001706 
+
+---------------------------
+line result: 5577.02979 
+ew (mA)      :  11.44849 
+ew error (mA):  0.54264 
+nfit : 1 
+line depth : 0.09437 
+FWHM : 0.11397 
+-------------------------
+int 2 status: 0
+
+line nº 18 searching for line 5584.77 in the interval [3783.14,6913.32]. Using rejt 0.993170 
+
+
+ LINES FOUND TO FIT 
+5584.53 5584.78 5585.19 5585.29 5585.32 
+
+ RESAMPLING 
+5584.53 5584.78 5585.19 5585.31 
+
+ GUESS COEFS :
+acoef[ 0]:  0.97480 acoef[ 1]:  400.00000 acoef[ 2]:  5584.53 
+acoef[ 3]:  0.71387 acoef[ 4]:  400.00000 acoef[ 5]:  5584.78 
+acoef[ 6]:  0.95413 acoef[ 7]:  400.00000 acoef[ 8]:  5585.19 
+acoef[ 9]:  0.97397 acoef[10]:  400.00000 acoef[11]:  5585.31 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.97567 acoef[ 1]:  167.39149 acoef[ 2]:  5584.51 
++-ac_er[ 0]:  0.00629 ac_er[ 1]:  102.58925 ac_er[ 2]:   0.007337 
+::acoef[ 3]:  0.72653 acoef[ 4]:  180.44330 acoef[ 5]:  5584.77 
++-ac_er[ 3]:  0.00503 ac_er[ 4]:    7.99724 ac_er[ 5]:   0.000797 
+::acoef[ 6]:  -1395.66319 acoef[ 7]:    0.43230 acoef[ 8]:  5590.05 
++-ac_er[ 6]:  422749.69197 ac_er[ 7]:   11.79956 ac_er[ 8]:  138.240240 
+::acoef[ 9]:  1.11415 acoef[10]:   43.26407 acoef[11]:  5585.43 
++-ac_er[ 9]:  0.30774 ac_er[10]:   71.02256 ac_er[11]:   0.188274 
+
+---------------------------
+line result: 5584.77002 
+ew (mA)      :  36.08441 
+ew error (mA):  1.03926 
+nfit : 4 
+line depth : 0.27347 
+FWHM : 0.12396 
+-------------------------
+int 2 status: 0
+
+line nº 19 searching for line 5587.58 in the interval [3783.14,6913.32]. Using rejt 0.993175 
+
+
+ LINES FOUND TO FIT 
+5587.59 5587.87 
+
+ RESAMPLING 
+5587.59 5587.87 
+
+ GUESS COEFS :
+acoef[ 0]:  0.71392 acoef[ 1]:  400.00000 acoef[ 2]:  5587.59 
+acoef[ 3]:  0.56045 acoef[ 4]:  400.00000 acoef[ 5]:  5587.87 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.71781 acoef[ 1]:  197.56460 acoef[ 2]:  5587.58 
++-ac_er[ 0]:  0.00280 ac_er[ 1]:    4.52867 ac_er[ 2]:   0.000576 
+::acoef[ 3]:  0.55938 acoef[ 4]:  207.44353 acoef[ 5]:  5587.86 
++-ac_er[ 3]:  0.00283 ac_er[ 4]:    3.08433 ac_er[ 5]:   0.000365 
+
+---------------------------
+line result: 5587.58008 
+ew (mA)      :  35.58503 
+ew error (mA):  0.53942 
+nfit : 2 
+line depth : 0.28219 
+FWHM : 0.11846 
+-------------------------
+int 2 status: 0
+
+line nº 20 searching for line 5594.66 in the interval [3783.14,6913.32]. Using rejt 0.993189 
+
+
+ LINES FOUND TO FIT 
+5594.48 5594.68 
+
+ RESAMPLING 
+5594.48 5594.68 
+
+ GUESS COEFS :
+acoef[ 0]:  0.26408 acoef[ 1]:  400.00000 acoef[ 2]:  5594.48 
+acoef[ 3]:  0.55657 acoef[ 4]:  400.00000 acoef[ 5]:  5594.68 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.27302 acoef[ 1]:  101.48965 acoef[ 2]:  5594.47 
++-ac_er[ 0]:  0.00537 ac_er[ 1]:    2.44077 ac_er[ 2]:   0.000791 
+::acoef[ 3]:  0.56943 acoef[ 4]:  173.65607 acoef[ 5]:  5594.66 
++-ac_er[ 3]:  0.00605 ac_er[ 4]:    7.47298 ac_er[ 5]:   0.001175 
+
+---------------------------
+line result: 5594.66016 
+ew (mA)      :  57.91213 
+ew error (mA):  1.48854 
+nfit : 2 
+line depth : 0.43057 
+FWHM : 0.12636 
+-------------------------
+int 2 status: 0
+
+line nº 21 searching for line 5618.64 in the interval [3783.14,6913.32]. Using rejt 0.993237 
+
+
+ LINES FOUND TO FIT 
+5618.64 
+
+ RESAMPLING 
+5618.64 
+
+ GUESS COEFS :
+acoef[ 0]:  0.60988 acoef[ 1]:  400.00000 acoef[ 2]:  5618.64 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.61016 acoef[ 1]:  190.53260 acoef[ 2]:  5618.64 
++-ac_er[ 0]:  0.00275 ac_er[ 1]:    3.10288 ac_er[ 2]:   0.000417 
+
+---------------------------
+line result: 5618.64014 
+ew (mA)      :  50.05773 
+ew error (mA):  0.53919 
+nfit : 1 
+line depth : 0.38984 
+FWHM : 0.12063 
+-------------------------
+int 2 status: 0
+
+line nº 22 searching for line 5619.60 in the interval [3783.14,6913.32]. Using rejt 0.993239 
+
+
+ LINES FOUND TO FIT 
+5619.61 
+
+ RESAMPLING 
+5619.61 
+
+ GUESS COEFS :
+acoef[ 0]:  0.73142 acoef[ 1]:  400.00000 acoef[ 2]:  5619.61 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.73576 acoef[ 1]:  181.50014 acoef[ 2]:  5619.60 
++-ac_er[ 0]:  0.00291 ac_er[ 1]:    4.61621 ac_er[ 2]:   0.000667 
+
+---------------------------
+line result: 5619.60010 
+ew (mA)      :  34.76454 
+ew error (mA):  0.58479 
+nfit : 1 
+line depth : 0.26424 
+FWHM : 0.12360 
+-------------------------
+int 2 status: 0
+
+line nº 23 searching for line 5633.95 in the interval [3783.14,6913.32]. Using rejt 0.993268 
+
+
+ LINES FOUND TO FIT 
+5633.96 
+
+ RESAMPLING 
+5633.96 
+
+ GUESS COEFS :
+acoef[ 0]:  0.53239 acoef[ 1]:  400.00000 acoef[ 2]:  5633.96 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.54347 acoef[ 1]:  145.66375 acoef[ 2]:  5633.95 
++-ac_er[ 0]:  0.00568 ac_er[ 1]:    4.18448 ac_er[ 2]:   0.000842 
+
+---------------------------
+line result: 5633.95020 
+ew (mA)      :  67.04573 
+ew error (mA):  1.27394 
+nfit : 1 
+line depth : 0.45653 
+FWHM : 0.13796 
+-------------------------
+int 2 status: 0
+
+line nº 24 searching for line 5635.83 in the interval [3783.14,6913.32]. Using rejt 0.993272 
+
+
+ LINES FOUND TO FIT 
+5635.83 
+
+ RESAMPLING 
+5635.83 
+
+ GUESS COEFS :
+acoef[ 0]:  0.73101 acoef[ 1]:  400.00000 acoef[ 2]:  5635.83 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.73067 acoef[ 1]:  208.66182 acoef[ 2]:  5635.82 
++-ac_er[ 0]:  0.00280 ac_er[ 1]:    5.04333 ac_er[ 2]:   0.000588 
+
+---------------------------
+line result: 5635.83008 
+ew (mA)      :  33.04768 
+ew error (mA):  0.52706 
+nfit : 1 
+line depth : 0.26933 
+FWHM : 0.11527 
+-------------------------
+int 2 status: 0
+
+line nº 25 searching for line 5636.70 in the interval [3783.14,6913.32]. Using rejt 0.993273 
+
+
+ LINES FOUND TO FIT 
+5636.70 
+
+ RESAMPLING 
+5636.70 
+
+ GUESS COEFS :
+acoef[ 0]:  0.83395 acoef[ 1]:  400.00000 acoef[ 2]:  5636.70 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.83201 acoef[ 1]:  235.49554 acoef[ 2]:  5636.70 
++-ac_er[ 0]:  0.00289 ac_er[ 1]:    9.41679 ac_er[ 2]:   0.000914 
+
+---------------------------
+line result: 5636.70020 
+ew (mA)      :  19.40294 
+ew error (mA):  0.51172 
+nfit : 1 
+line depth : 0.16799 
+FWHM : 0.10851 
+-------------------------
+int 2 status: 0
+
+line nº 26 searching for line 5638.27 in the interval [3783.14,6913.32]. Using rejt 0.993277 
+
+
+ LINES FOUND TO FIT 
+5638.28 
+
+ RESAMPLING 
+5638.28 
+
+ GUESS COEFS :
+acoef[ 0]:  0.47250 acoef[ 1]:  400.00000 acoef[ 2]:  5638.28 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.47851 acoef[ 1]:  144.93966 acoef[ 2]:  5638.26 
++-ac_er[ 0]:  0.00379 ac_er[ 1]:    2.43138 ac_er[ 2]:   0.000493 
+
+---------------------------
+line result: 5638.27002 
+ew (mA)      :  76.77669 
+ew error (mA):  0.85187 
+nfit : 1 
+line depth : 0.52149 
+FWHM : 0.13831 
+-------------------------
+int 2 status: 0
+
+line nº 27 searching for line 5641.44 in the interval [3783.14,6913.32]. Using rejt 0.993283 
+
+
+ LINES FOUND TO FIT 
+5641.45 
+
+ RESAMPLING 
+5641.45 
+
+ GUESS COEFS :
+acoef[ 0]:  0.55271 acoef[ 1]:  400.00000 acoef[ 2]:  5641.45 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.55389 acoef[ 1]:  151.11502 acoef[ 2]:  5641.44 
++-ac_er[ 0]:  0.00258 ac_er[ 1]:    2.02388 ac_er[ 2]:   0.000384 
+
+---------------------------
+line result: 5641.43994 
+ew (mA)      :  64.32237 
+ew error (mA):  0.56906 
+nfit : 1 
+line depth : 0.44611 
+FWHM : 0.13545 
+-------------------------
+int 2 status: 0
+
+line nº 28 searching for line 5649.99 in the interval [3783.14,6913.32]. Using rejt 0.993300 
+
+
+ LINES FOUND TO FIT 
+5649.68 5650.00 
+
+ RESAMPLING 
+5649.68 5650.00 
+
+ GUESS COEFS :
+acoef[ 0]:  0.77122 acoef[ 1]:  400.00000 acoef[ 2]:  5649.68 
+acoef[ 3]:  0.73079 acoef[ 4]:  400.00000 acoef[ 5]:  5650.00 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.76668 acoef[ 1]:  122.38508 acoef[ 2]:  5649.67 
++-ac_er[ 0]:  0.00244 ac_er[ 1]:    2.96228 ac_er[ 2]:   0.000772 
+::acoef[ 3]:  0.73388 acoef[ 4]:  173.64406 acoef[ 5]:  5649.99 
++-ac_er[ 3]:  0.00266 ac_er[ 4]:    4.02118 ac_er[ 5]:   0.000620 
+
+---------------------------
+line result: 5649.99023 
+ew (mA)      :  35.79460 
+ew error (mA):  0.54775 
+nfit : 2 
+line depth : 0.26612 
+FWHM : 0.12636 
+-------------------------
+int 2 status: 0
+
+line nº 29 searching for line 5651.47 in the interval [3783.14,6913.32]. Using rejt 0.993303 
+
+
+ LINES FOUND TO FIT 
+5651.48 
+
+ RESAMPLING 
+5651.48 
+
+ GUESS COEFS :
+acoef[ 0]:  0.84870 acoef[ 1]:  400.00000 acoef[ 2]:  5651.48 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.85065 acoef[ 1]:  202.83813 acoef[ 2]:  5651.47 
++-ac_er[ 0]:  0.00278 ac_er[ 1]:    8.80293 ac_er[ 2]:   0.001064 
+
+---------------------------
+line result: 5651.47021 
+ew (mA)      :  18.58651 
+ew error (mA):  0.53098 
+nfit : 1 
+line depth : 0.14935 
+FWHM : 0.11691 
+-------------------------
+int 2 status: 0
+
+line nº 30 searching for line 5652.32 in the interval [3783.14,6913.32]. Using rejt 0.993305 
+
+
+ LINES FOUND TO FIT 
+5652.33 
+
+ RESAMPLING 
+5652.33 
+
+ GUESS COEFS :
+acoef[ 0]:  0.78066 acoef[ 1]:  400.00000 acoef[ 2]:  5652.33 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.78690 acoef[ 1]:  183.81344 acoef[ 2]:  5652.32 
++-ac_er[ 0]:  0.00270 ac_er[ 1]:    5.39419 ac_er[ 2]:   0.000763 
+
+---------------------------
+line result: 5652.31982 
+ew (mA)      :  27.85968 
+ew error (mA):  0.54008 
+nfit : 1 
+line depth : 0.21310 
+FWHM : 0.12282 
+-------------------------
+int 2 status: 0
+
+line nº 31 searching for line 5653.87 in the interval [3783.14,6913.32]. Using rejt 0.993308 
+
+
+ LINES FOUND TO FIT 
+5653.88 5654.42 5654.52 5654.95 5655.19 5655.50 
+
+ RESAMPLING 
+5653.88 5654.47 5654.95 5655.19 5655.50 
+
+ GUESS COEFS :
+acoef[ 0]:  0.69957 acoef[ 1]:  400.00000 acoef[ 2]:  5653.88 
+acoef[ 3]:  0.88667 acoef[ 4]:  400.00000 acoef[ 5]:  5654.47 
+acoef[ 6]:  0.85470 acoef[ 7]:  400.00000 acoef[ 8]:  5654.95 
+acoef[ 9]:  0.62769 acoef[10]:  400.00000 acoef[11]:  5655.19 
+acoef[12]:  0.51216 acoef[13]:  400.00000 acoef[14]:  5655.50 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.70682 acoef[ 1]:  185.34133 acoef[ 2]:  5653.87 
++-ac_er[ 0]:  0.00352 ac_er[ 1]:    5.15299 ac_er[ 2]:   0.000721 
+::acoef[ 3]:  0.88586 acoef[ 4]:   19.84247 acoef[ 5]:  5654.49 
++-ac_er[ 3]:  0.00205 ac_er[ 4]:    0.89255 ac_er[ 5]:   0.003342 
+::acoef[ 6]:  0.85861 acoef[ 7]:  114.02370 acoef[ 8]:  5654.93 
++-ac_er[ 6]:  0.00317 ac_er[ 7]:    6.74612 ac_er[ 8]:   0.001810 
+::acoef[ 9]:  0.63383 acoef[10]:  156.03426 acoef[11]:  5655.18 
++-ac_er[ 9]:  0.00340 ac_er[10]:    3.63136 ac_er[11]:   0.000630 
+::acoef[12]:  0.52328 acoef[13]:  142.99200 acoef[14]:  5655.49 
++-ac_er[12]:  0.00330 ac_er[13]:    2.28981 ac_er[14]:   0.000473 
+
+---------------------------
+line result: 5653.87012 
+ew (mA)      :  38.16953 
+ew error (mA):  0.70134 
+nfit : 5 
+line depth : 0.29318 
+FWHM : 0.12231 
+-------------------------
+int 2 status: 0
+
+line nº 32 searching for line 5661.35 in the interval [3783.14,6913.32]. Using rejt 0.993323 
+
+
+ LINES FOUND TO FIT 
+5661.36 
+
+ RESAMPLING 
+5661.36 
+
+ GUESS COEFS :
+acoef[ 0]:  0.81826 acoef[ 1]:  400.00000 acoef[ 2]:  5661.36 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.82427 acoef[ 1]:  195.22031 acoef[ 2]:  5661.35 
++-ac_er[ 0]:  0.00274 ac_er[ 1]:    7.07094 ac_er[ 2]:   0.000909 
+
+---------------------------
+line result: 5661.35010 
+ew (mA)      :  22.29293 
+ew error (mA):  0.53249 
+nfit : 1 
+line depth : 0.17573 
+FWHM : 0.11917 
+-------------------------
+int 2 status: 0
+
+line nº 33 searching for line 5662.52 in the interval [3783.14,6913.32]. Using rejt 0.993325 
+
+
+ LINES FOUND TO FIT 
+5661.96 5662.17 5662.53 5662.94 
+
+ RESAMPLING 
+5661.96 5662.17 5662.53 5662.94 
+
+ GUESS COEFS :
+acoef[ 0]:  0.96641 acoef[ 1]:  400.00000 acoef[ 2]:  5661.96 
+acoef[ 3]:  0.81319 acoef[ 4]:  400.00000 acoef[ 5]:  5662.17 
+acoef[ 6]:  0.40365 acoef[ 7]:  400.00000 acoef[ 8]:  5662.53 
+acoef[ 9]:  0.62012 acoef[10]:  400.00000 acoef[11]:  5662.94 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.96352 acoef[ 1]:  214.81280 acoef[ 2]:  5661.97 
++-ac_er[ 0]:  0.00458 ac_er[ 1]:   74.22373 ac_er[ 2]:   0.007535 
+::acoef[ 3]:  0.81760 acoef[ 4]:  196.89002 acoef[ 5]:  5662.16 
++-ac_er[ 3]:  0.00445 ac_er[ 4]:   12.89422 ac_er[ 5]:   0.001538 
+::acoef[ 6]:  0.41525 acoef[ 7]:  124.81567 acoef[ 8]:  5662.52 
++-ac_er[ 6]:  0.00390 ac_er[ 7]:    1.92352 ac_er[ 8]:   0.000488 
+::acoef[ 9]:  0.62488 acoef[10]:  170.45989 acoef[11]:  5662.93 
++-ac_er[ 9]:  0.00422 ac_er[10]:    4.42746 ac_er[11]:   0.000703 
+
+---------------------------
+line result: 5662.52002 
+ew (mA)      :  92.77084 
+ew error (mA):  0.94564 
+nfit : 4 
+line depth : 0.58475 
+FWHM : 0.14904 
+-------------------------
+int 2 status: 0
+
+line nº 34 searching for line 5667.52 in the interval [3783.14,6913.32]. Using rejt 0.993335 
+
+
+ LINES FOUND TO FIT 
+5667.53 
+
+ RESAMPLING 
+5667.53 
+
+ GUESS COEFS :
+acoef[ 0]:  0.63255 acoef[ 1]:  400.00000 acoef[ 2]:  5667.53 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.64616 acoef[ 1]:  147.66585 acoef[ 2]:  5667.52 
++-ac_er[ 0]:  0.00415 ac_er[ 1]:    3.99726 ac_er[ 2]:   0.000787 
+
+---------------------------
+line result: 5667.52002 
+ew (mA)      :  51.61071 
+ew error (mA):  0.92397 
+nfit : 1 
+line depth : 0.35384 
+FWHM : 0.13703 
+-------------------------
+int 2 status: 0
+
+line nº 35 searching for line 5679.03 in the interval [3783.14,6913.32]. Using rejt 0.993358 
+
+
+ LINES FOUND TO FIT 
+5679.04 
+
+ RESAMPLING 
+5679.04 
+
+ GUESS COEFS :
+acoef[ 0]:  0.56761 acoef[ 1]:  400.00000 acoef[ 2]:  5679.04 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.57296 acoef[ 1]:  161.61669 acoef[ 2]:  5679.03 
++-ac_er[ 0]:  0.00376 ac_er[ 1]:    3.28524 ac_er[ 2]:   0.000565 
+
+---------------------------
+line result: 5679.02979 
+ew (mA)      :  59.53924 
+ew error (mA):  0.80052 
+nfit : 1 
+line depth : 0.42704 
+FWHM : 0.13098 
+-------------------------
+int 2 status: 0
+
+line nº 36 searching for line 5680.24 in the interval [3783.14,6913.32]. Using rejt 0.993360 
+
+
+ LINES FOUND TO FIT 
+5680.25 
+
+ RESAMPLING 
+5680.25 
+
+ GUESS COEFS :
+acoef[ 0]:  0.91810 acoef[ 1]:  400.00000 acoef[ 2]:  5680.25 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.91417 acoef[ 1]:  214.96640 acoef[ 2]:  5680.24 
++-ac_er[ 0]:  0.00280 ac_er[ 1]:   16.56131 ac_er[ 2]:   0.001813 
+
+---------------------------
+line result: 5680.24023 
+ew (mA)      :  10.37625 
+ew error (mA):  0.52384 
+nfit : 1 
+line depth : 0.08583 
+FWHM : 0.11357 
+-------------------------
+int 2 status: 0
+
+line nº 37 searching for line 5701.55 in the interval [3783.14,6913.32]. Using rejt 0.993403 
+
+
+ LINES FOUND TO FIT 
+5701.56 
+
+ RESAMPLING 
+5701.56 
+
+ GUESS COEFS :
+acoef[ 0]:  0.42464 acoef[ 1]:  400.00000 acoef[ 2]:  5701.56 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.42847 acoef[ 1]:  145.44551 acoef[ 2]:  5701.55 
++-ac_er[ 0]:  0.00284 ac_er[ 1]:    1.66792 ac_er[ 2]:   0.000336 
+
+---------------------------
+line result: 5701.54980 
+ew (mA)      :  83.99674 
+ew error (mA):  0.63712 
+nfit : 1 
+line depth : 0.57153 
+FWHM : 0.13807 
+-------------------------
+int 2 status: 0
+
+line nº 38 searching for line 5715.09 in the interval [3783.14,6913.32]. Using rejt 0.993430 
+
+
+ LINES FOUND TO FIT 
+5715.10 
+
+ RESAMPLING 
+5715.10 
+
+ GUESS COEFS :
+acoef[ 0]:  0.51192 acoef[ 1]:  400.00000 acoef[ 2]:  5715.10 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.51639 acoef[ 1]:  140.25541 acoef[ 2]:  5715.09 
++-ac_er[ 0]:  0.00247 ac_er[ 1]:    1.65665 ac_er[ 2]:   0.000353 
+
+---------------------------
+line result: 5715.08984 
+ew (mA)      :  72.37867 
+ew error (mA):  0.56547 
+nfit : 1 
+line depth : 0.48361 
+FWHM : 0.14060 
+-------------------------
+int 2 status: 0
+
+line nº 39 searching for line 5720.90 in the interval [3783.14,6913.32]. Using rejt 0.993442 
+
+
+ LINES FOUND TO FIT 
+5720.90 
+
+ RESAMPLING 
+5720.90 
+
+ GUESS COEFS :
+acoef[ 0]:  0.88260 acoef[ 1]:  400.00000 acoef[ 2]:  5720.90 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.88795 acoef[ 1]:  162.12982 acoef[ 2]:  5720.89 
++-ac_er[ 0]:  0.00256 ac_er[ 1]:    8.58614 ac_er[ 2]:   0.001466 
+
+---------------------------
+line result: 5720.89990 
+ew (mA)      :  15.59694 
+ew error (mA):  0.54572 
+nfit : 1 
+line depth : 0.11205 
+FWHM : 0.13077 
+-------------------------
+int 2 status: 0
+
+line nº 40 searching for line 5731.77 in the interval [3783.14,6913.32]. Using rejt 0.993464 
+
+
+ LINES FOUND TO FIT 
+5731.77 
+
+ RESAMPLING 
+5731.77 
+
+ GUESS COEFS :
+acoef[ 0]:  0.56575 acoef[ 1]:  400.00000 acoef[ 2]:  5731.77 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.57273 acoef[ 1]:  174.58063 acoef[ 2]:  5731.76 
++-ac_er[ 0]:  0.00260 ac_er[ 1]:    2.45427 ac_er[ 2]:   0.000376 
+
+---------------------------
+line result: 5731.77002 
+ew (mA)      :  57.31677 
+ew error (mA):  0.53286 
+nfit : 1 
+line depth : 0.42727 
+FWHM : 0.12602 
+-------------------------
+int 2 status: 0
+
+line nº 41 searching for line 5738.24 in the interval [3783.14,6913.32]. Using rejt 0.993476 
+
+
+ LINES FOUND TO FIT 
+5738.02 5738.25 
+
+ RESAMPLING 
+5738.02 5738.25 
+
+ GUESS COEFS :
+acoef[ 0]:  0.97922 acoef[ 1]:  400.00000 acoef[ 2]:  5738.02 
+acoef[ 3]:  0.89605 acoef[ 4]:  400.00000 acoef[ 5]:  5738.25 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.97677 acoef[ 1]:  261.23717 acoef[ 2]:  5738.03 
++-ac_er[ 0]:  0.00293 ac_er[ 1]:   83.57381 ac_er[ 2]:   0.006457 
+::acoef[ 3]:  0.89914 acoef[ 4]:  182.96152 acoef[ 5]:  5738.24 
++-ac_er[ 3]:  0.00268 ac_er[ 4]:   12.09895 ac_er[ 5]:   0.001610 
+
+---------------------------
+line result: 5738.24023 
+ew (mA)      :  13.21591 
+ew error (mA):  0.56022 
+nfit : 2 
+line depth : 0.10086 
+FWHM : 0.12310 
+-------------------------
+int 2 status: 0
+
+line nº 42 searching for line 5741.85 in the interval [3783.14,6913.32]. Using rejt 0.993484 
+
+
+ LINES FOUND TO FIT 
+5741.86 
+
+ RESAMPLING 
+5741.86 
+
+ GUESS COEFS :
+acoef[ 0]:  0.75276 acoef[ 1]:  400.00000 acoef[ 2]:  5741.86 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.75019 acoef[ 1]:  201.35387 acoef[ 2]:  5741.85 
++-ac_er[ 0]:  0.00269 ac_er[ 1]:    5.00463 ac_er[ 2]:   0.000619 
+
+---------------------------
+line result: 5741.85010 
+ew (mA)      :  31.20369 
+ew error (mA):  0.51279 
+nfit : 1 
+line depth : 0.24981 
+FWHM : 0.11734 
+-------------------------
+int 2 status: 0
+
+line nº 43 searching for line 5752.04 in the interval [3783.14,6913.32]. Using rejt 0.993504 
+
+
+ LINES FOUND TO FIT 
+5752.04 
+
+ RESAMPLING 
+5752.04 
+
+ GUESS COEFS :
+acoef[ 0]:  0.60530 acoef[ 1]:  400.00000 acoef[ 2]:  5752.04 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.60967 acoef[ 1]:  159.44065 acoef[ 2]:  5752.04 
++-ac_er[ 0]:  0.00298 ac_er[ 1]:    2.81190 ac_er[ 2]:   0.000494 
+
+---------------------------
+line result: 5752.04004 
+ew (mA)      :  54.79087 
+ew error (mA):  0.63911 
+nfit : 1 
+line depth : 0.39033 
+FWHM : 0.13187 
+-------------------------
+int 2 status: 0
+
+line nº 44 searching for line 5775.08 in the interval [3783.14,6913.32]. Using rejt 0.993550 
+
+
+ LINES FOUND TO FIT 
+5775.09 
+
+ RESAMPLING 
+5775.09 
+
+ GUESS COEFS :
+acoef[ 0]:  0.56473 acoef[ 1]:  400.00000 acoef[ 2]:  5775.09 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.57061 acoef[ 1]:  167.97622 acoef[ 2]:  5775.08 
++-ac_er[ 0]:  0.00272 ac_er[ 1]:    2.45740 ac_er[ 2]:   0.000399 
+
+---------------------------
+line result: 5775.08008 
+ew (mA)      :  58.72173 
+ew error (mA):  0.56820 
+nfit : 1 
+line depth : 0.42939 
+FWHM : 0.12848 
+-------------------------
+int 2 status: 0
+
+line nº 45 searching for line 5778.46 in the interval [3783.14,6913.32]. Using rejt 0.993557 
+
+
+ LINES FOUND TO FIT 
+5778.47 
+
+ RESAMPLING 
+5778.47 
+
+ GUESS COEFS :
+acoef[ 0]:  0.81818 acoef[ 1]:  400.00000 acoef[ 2]:  5778.47 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.81729 acoef[ 1]:  214.54039 acoef[ 2]:  5778.46 
++-ac_er[ 0]:  0.00270 ac_er[ 1]:    7.34723 ac_er[ 2]:   0.000824 
+
+---------------------------
+line result: 5778.45996 
+ew (mA)      :  22.10929 
+ew error (mA):  0.50013 
+nfit : 1 
+line depth : 0.18271 
+FWHM : 0.11368 
+-------------------------
+int 2 status: 0
+
+line nº 46 searching for line 5793.92 in the interval [3783.14,6913.32]. Using rejt 0.993588 
+
+
+ LINES FOUND TO FIT 
+5793.93 
+
+ RESAMPLING 
+5793.93 
+
+ GUESS COEFS :
+acoef[ 0]:  0.73315 acoef[ 1]:  400.00000 acoef[ 2]:  5793.93 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.73780 acoef[ 1]:  181.09216 acoef[ 2]:  5793.92 
++-ac_er[ 0]:  0.00402 ac_er[ 1]:    6.41453 ac_er[ 2]:   0.000931 
+
+---------------------------
+line result: 5793.91992 
+ew (mA)      :  34.53517 
+ew error (mA):  0.80910 
+nfit : 1 
+line depth : 0.26220 
+FWHM : 0.12374 
+-------------------------
+int 2 status: 0
+
+line nº 47 searching for line 5806.73 in the interval [3783.14,6913.32]. Using rejt 0.993613 
+
+
+ LINES FOUND TO FIT 
+5806.74 
+
+ RESAMPLING 
+5806.74 
+
+ GUESS COEFS :
+acoef[ 0]:  0.61925 acoef[ 1]:  400.00000 acoef[ 2]:  5806.74 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.62895 acoef[ 1]:  144.72562 acoef[ 2]:  5806.73 
++-ac_er[ 0]:  0.00387 ac_er[ 1]:    3.48639 ac_er[ 2]:   0.000708 
+
+---------------------------
+line result: 5806.72998 
+ew (mA)      :  54.66870 
+ew error (mA):  0.87093 
+nfit : 1 
+line depth : 0.37105 
+FWHM : 0.13841 
+-------------------------
+int 2 status: 0
+
+line nº 48 searching for line 5809.22 in the interval [3783.14,6913.32]. Using rejt 0.993618 
+
+
+ LINES FOUND TO FIT 
+5809.23 
+
+ RESAMPLING 
+5809.23 
+
+ GUESS COEFS :
+acoef[ 0]:  0.64505 acoef[ 1]:  400.00000 acoef[ 2]:  5809.23 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.65229 acoef[ 1]:  147.41470 acoef[ 2]:  5809.22 
++-ac_er[ 0]:  0.00442 ac_er[ 1]:    4.33167 ac_er[ 2]:   0.000855 
+
+---------------------------
+line result: 5809.22021 
+ew (mA)      :  50.76004 
+ew error (mA):  0.98639 
+nfit : 1 
+line depth : 0.34771 
+FWHM : 0.13714 
+-------------------------
+int 2 status: 0
+
+line nº 49 searching for line 5811.92 in the interval [3783.14,6913.32]. Using rejt 0.993624 
+
+
+ LINES FOUND TO FIT 
+5811.93 
+
+ RESAMPLING 
+5811.93 
+
+ GUESS COEFS :
+acoef[ 0]:  0.91544 acoef[ 1]:  400.00000 acoef[ 2]:  5811.93 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.91077 acoef[ 1]:  230.12122 acoef[ 2]:  5811.92 
++-ac_er[ 0]:  0.00273 ac_er[ 1]:   16.40424 ac_er[ 2]:   0.001642 
+
+---------------------------
+line result: 5811.91992 
+ew (mA)      :  10.42574 
+ew error (mA):  0.48944 
+nfit : 1 
+line depth : 0.08923 
+FWHM : 0.10977 
+-------------------------
+int 2 status: 0
+
+line nº 50 searching for line 5814.81 in the interval [3783.14,6913.32]. Using rejt 0.993630 
+
+
+ LINES FOUND TO FIT 
+5814.82 
+
+ RESAMPLING 
+5814.82 
+
+ GUESS COEFS :
+acoef[ 0]:  0.82294 acoef[ 1]:  400.00000 acoef[ 2]:  5814.82 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.82182 acoef[ 1]:  189.31477 acoef[ 2]:  5814.81 
++-ac_er[ 0]:  0.00260 ac_er[ 1]:    6.51380 ac_er[ 2]:   0.000865 
+
+---------------------------
+line result: 5814.81006 
+ew (mA)      :  22.95351 
+ew error (mA):  0.51793 
+nfit : 1 
+line depth : 0.17818 
+FWHM : 0.12102 
+-------------------------
+int 2 status: 0
+
+line nº 51 searching for line 5815.22 in the interval [3783.14,6913.32]. Using rejt 0.993630 
+
+
+ LINES FOUND TO FIT 
+5815.22 
+
+ RESAMPLING 
+5815.22 
+
+ GUESS COEFS :
+acoef[ 0]:  0.91360 acoef[ 1]:  400.00000 acoef[ 2]:  5815.22 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.91700 acoef[ 1]:  213.81384 acoef[ 2]:  5815.22 
++-ac_er[ 0]:  0.00269 ac_er[ 1]:   16.37503 ac_er[ 2]:   0.001803 
+
+---------------------------
+line result: 5815.22021 
+ew (mA)      :  10.06106 
+ew error (mA):  0.50435 
+nfit : 1 
+line depth : 0.08300 
+FWHM : 0.11387 
+-------------------------
+int 2 status: 0
+
+line nº 52 searching for line 5827.88 in the interval [3783.14,6913.32]. Using rejt 0.993656 
+
+
+ LINES FOUND TO FIT 
+5827.89 
+
+ RESAMPLING 
+5827.89 
+
+ GUESS COEFS :
+acoef[ 0]:  0.90955 acoef[ 1]:  400.00000 acoef[ 2]:  5827.89 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.90733 acoef[ 1]:  238.11790 acoef[ 2]:  5827.88 
++-ac_er[ 0]:  0.00274 ac_er[ 1]:   16.62527 ac_er[ 2]:   0.001564 
+
+---------------------------
+line result: 5827.87988 
+ew (mA)      :  10.64431 
+ew error (mA):  0.48729 
+nfit : 1 
+line depth : 0.09267 
+FWHM : 0.10791 
+-------------------------
+int 2 status: 0
+
+line nº 53 searching for line 5852.22 in the interval [3783.14,6913.32]. Using rejt 0.993704 
+
+
+ LINES FOUND TO FIT 
+5852.23 
+
+ RESAMPLING 
+5852.23 
+
+ GUESS COEFS :
+acoef[ 0]:  0.69670 acoef[ 1]:  400.00000 acoef[ 2]:  5852.23 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.70167 acoef[ 1]:  178.81787 acoef[ 2]:  5852.22 
++-ac_er[ 0]:  0.00252 ac_er[ 1]:    3.49764 ac_er[ 2]:   0.000516 
+
+---------------------------
+line result: 5852.22021 
+ew (mA)      :  39.54280 
+ew error (mA):  0.51106 
+nfit : 1 
+line depth : 0.29833 
+FWHM : 0.12452 
+-------------------------
+int 2 status: 0
+
+line nº 54 searching for line 5853.15 in the interval [3783.14,6913.32]. Using rejt 0.993706 
+
+
+ LINES FOUND TO FIT 
+5853.17 
+
+ RESAMPLING 
+5853.17 
+
+ GUESS COEFS :
+acoef[ 0]:  0.93421 acoef[ 1]:  400.00000 acoef[ 2]:  5853.17 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.93519 acoef[ 1]:  208.71860 acoef[ 2]:  5853.15 
++-ac_er[ 0]:  0.00266 ac_er[ 1]:   21.05791 ac_er[ 2]:   0.002325 
+
+---------------------------
+line result: 5853.14990 
+ew (mA)      :  7.95108 
+ew error (mA):  0.51730 
+nfit : 1 
+line depth : 0.06481 
+FWHM : 0.11526 
+-------------------------
+int 2 status: 0
+
+line nº 55 searching for line 5855.08 in the interval [3783.14,6913.32]. Using rejt 0.993710 
+
+
+ LINES FOUND TO FIT 
+5855.09 
+
+ RESAMPLING 
+5855.09 
+
+ GUESS COEFS :
+acoef[ 0]:  0.82804 acoef[ 1]:  400.00000 acoef[ 2]:  5855.09 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.82915 acoef[ 1]:  166.96149 acoef[ 2]:  5855.08 
++-ac_er[ 0]:  0.00290 ac_er[ 1]:    6.56438 ac_er[ 2]:   0.001074 
+
+---------------------------
+line result: 5855.08008 
+ew (mA)      :  23.43542 
+ew error (mA):  0.60907 
+nfit : 1 
+line depth : 0.17085 
+FWHM : 0.12886 
+-------------------------
+int 2 status: 0
+
+line nº 56 searching for line 5856.09 in the interval [3783.14,6913.32]. Using rejt 0.993712 
+
+
+ LINES FOUND TO FIT 
+5856.10 
+
+ RESAMPLING 
+5856.10 
+
+ GUESS COEFS :
+acoef[ 0]:  0.73677 acoef[ 1]:  400.00000 acoef[ 2]:  5856.10 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.74005 acoef[ 1]:  190.81633 acoef[ 2]:  5856.09 
++-ac_er[ 0]:  0.00256 ac_er[ 1]:    4.34732 ac_er[ 2]:   0.000582 
+
+---------------------------
+line result: 5856.08984 
+ew (mA)      :  33.35471 
+ew error (mA):  0.50215 
+nfit : 1 
+line depth : 0.25995 
+FWHM : 0.12054 
+-------------------------
+int 2 status: 0
+
+line nº 57 searching for line 5862.36 in the interval [3783.14,6913.32]. Using rejt 0.993725 
+
+
+ LINES FOUND TO FIT 
+5862.37 
+
+ RESAMPLING 
+5862.37 
+
+ GUESS COEFS :
+acoef[ 0]:  0.46141 acoef[ 1]:  400.00000 acoef[ 2]:  5862.37 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.47197 acoef[ 1]:  118.67609 acoef[ 2]:  5862.36 
++-ac_er[ 0]:  0.00476 ac_er[ 1]:    2.47281 ac_er[ 2]:   0.000676 
+
+---------------------------
+line result: 5862.35986 
+ew (mA)      :  85.91180 
+ew error (mA):  1.18405 
+nfit : 1 
+line depth : 0.52803 
+FWHM : 0.15285 
+-------------------------
+int 2 status: 0
+
+line nº 58 searching for line 5902.48 in the interval [3783.14,6913.32]. Using rejt 0.993805 
+
+
+ LINES FOUND TO FIT 
+5902.50 
+
+ RESAMPLING 
+5902.50 
+
+ GUESS COEFS :
+acoef[ 0]:  0.86819 acoef[ 1]:  400.00000 acoef[ 2]:  5902.50 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.86967 acoef[ 1]:  183.36150 acoef[ 2]:  5902.48 
++-ac_er[ 0]:  0.00251 ac_er[ 1]:    8.34651 ac_er[ 2]:   0.001161 
+
+---------------------------
+line result: 5902.47998 
+ew (mA)      :  17.05908 
+ew error (mA):  0.50869 
+nfit : 1 
+line depth : 0.13033 
+FWHM : 0.12297 
+-------------------------
+int 2 status: 0
+
+line nº 59 searching for line 5905.68 in the interval [3783.14,6913.32]. Using rejt 0.993811 
+
+
+ LINES FOUND TO FIT 
+5905.68 
+
+ RESAMPLING 
+5905.68 
+
+ GUESS COEFS :
+acoef[ 0]:  0.57016 acoef[ 1]:  400.00000 acoef[ 2]:  5905.68 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.58113 acoef[ 1]:  155.63200 acoef[ 2]:  5905.68 
++-ac_er[ 0]:  0.00390 ac_er[ 1]:    3.34597 ac_er[ 2]:   0.000609 
+
+---------------------------
+line result: 5905.68018 
+ew (mA)      :  59.51172 
+ew error (mA):  0.84625 
+nfit : 1 
+line depth : 0.41887 
+FWHM : 0.13347 
+-------------------------
+int 2 status: 0
+
+line nº 60 searching for line 5916.26 in the interval [3783.14,6913.32]. Using rejt 0.993833 
+
+
+ LINES FOUND TO FIT 
+5916.01 5916.26 
+
+ RESAMPLING 
+5916.01 5916.26 
+
+ GUESS COEFS :
+acoef[ 0]:  0.95540 acoef[ 1]:  400.00000 acoef[ 2]:  5916.01 
+acoef[ 3]:  0.58778 acoef[ 4]:  400.00000 acoef[ 5]:  5916.26 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.95304 acoef[ 1]:  176.39700 acoef[ 2]:  5916.00 
++-ac_er[ 0]:  0.00282 ac_er[ 1]:   25.45084 ac_er[ 2]:   0.003688 
+::acoef[ 3]:  0.59424 acoef[ 4]:  172.19836 acoef[ 5]:  5916.25 
++-ac_er[ 3]:  0.00278 ac_er[ 4]:    2.75276 ac_er[ 5]:   0.000426 
+
+---------------------------
+line result: 5916.25977 
+ew (mA)      :  54.80581 
+ew error (mA):  0.57658 
+nfit : 2 
+line depth : 0.40576 
+FWHM : 0.12689 
+-------------------------
+int 2 status: 0
+
+line nº 61 searching for line 5927.79 in the interval [3783.14,6913.32]. Using rejt 0.993856 
+
+
+ LINES FOUND TO FIT 
+5927.80 
+
+ RESAMPLING 
+5927.80 
+
+ GUESS COEFS :
+acoef[ 0]:  0.68652 acoef[ 1]:  400.00000 acoef[ 2]:  5927.80 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.68844 acoef[ 1]:  172.54738 acoef[ 2]:  5927.79 
++-ac_er[ 0]:  0.00244 ac_er[ 1]:    3.11881 ac_er[ 2]:   0.000486 
+
+---------------------------
+line result: 5927.79004 
+ew (mA)      :  42.04043 
+ew error (mA):  0.50247 
+nfit : 1 
+line depth : 0.31156 
+FWHM : 0.12676 
+-------------------------
+int 2 status: 0
+
+line nº 62 searching for line 5929.68 in the interval [3783.14,6913.32]. Using rejt 0.993859 
+
+
+ LINES FOUND TO FIT 
+5929.49 5929.69 
+
+ RESAMPLING 
+5929.49 5929.69 
+
+ GUESS COEFS :
+acoef[ 0]:  0.97911 acoef[ 1]:  400.00000 acoef[ 2]:  5929.49 
+acoef[ 3]:  0.69879 acoef[ 4]:  400.00000 acoef[ 5]:  5929.69 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.98930 acoef[ 1]:  187.88307 acoef[ 2]:  5929.53 
++-ac_er[ 0]:  0.00363 ac_er[ 1]:  280.87549 ac_er[ 2]:   0.037571 
+::acoef[ 3]:  0.70351 acoef[ 4]:  157.73835 acoef[ 5]:  5929.68 
++-ac_er[ 3]:  0.00335 ac_er[ 4]:    7.36471 ac_er[ 5]:   0.001516 
+
+---------------------------
+line result: 5929.68018 
+ew (mA)      :  41.84250 
+ew error (mA):  1.08527 
+nfit : 2 
+line depth : 0.29649 
+FWHM : 0.13258 
+-------------------------
+int 2 status: 0
+
+line nº 63 searching for line 5930.19 in the interval [3783.14,6913.32]. Using rejt 0.993860 
+
+
+ LINES FOUND TO FIT 
+5930.20 
+
+ RESAMPLING 
+5930.20 
+
+ GUESS COEFS :
+acoef[ 0]:  0.45491 acoef[ 1]:  400.00000 acoef[ 2]:  5930.20 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.46742 acoef[ 1]:  115.85062 acoef[ 2]:  5930.19 
++-ac_er[ 0]:  0.00483 ac_er[ 1]:    2.42490 ac_er[ 2]:   0.000688 
+
+---------------------------
+line result: 5930.18994 
+ew (mA)      :  87.70251 
+ew error (mA):  1.21421 
+nfit : 1 
+line depth : 0.53258 
+FWHM : 0.15470 
+-------------------------
+int 2 status: 0
+
+line nº 64 searching for line 5934.66 in the interval [3783.14,6913.32]. Using rejt 0.993869 
+
+
+ LINES FOUND TO FIT 
+5934.44 5934.67 
+
+ RESAMPLING 
+5934.44 5934.67 
+
+ GUESS COEFS :
+acoef[ 0]:  0.97952 acoef[ 1]:  400.00000 acoef[ 2]:  5934.44 
+acoef[ 3]:  0.50343 acoef[ 4]:  400.00000 acoef[ 5]:  5934.67 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.97384 acoef[ 1]:  161.09439 acoef[ 2]:  5934.47 
++-ac_er[ 0]:  0.00261 ac_er[ 1]:   52.46490 ac_er[ 2]:   0.008385 
+::acoef[ 3]:  0.50705 acoef[ 4]:  135.26533 acoef[ 5]:  5934.66 
++-ac_er[ 3]:  0.00249 ac_er[ 4]:    2.18580 ac_er[ 5]:   0.000468 
+
+---------------------------
+line result: 5934.66016 
+ew (mA)      :  75.12489 
+ew error (mA):  0.71602 
+nfit : 2 
+line depth : 0.49295 
+FWHM : 0.14317 
+-------------------------
+int 2 status: 0
+
+line nº 65 searching for line 5956.70 in the interval [3783.14,6913.32]. Using rejt 0.993913 
+
+
+ LINES FOUND TO FIT 
+5956.71 
+
+ RESAMPLING 
+5956.71 
+
+ GUESS COEFS :
+acoef[ 0]:  0.56856 acoef[ 1]:  400.00000 acoef[ 2]:  5956.71 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.57184 acoef[ 1]:  210.01697 acoef[ 2]:  5956.70 
++-ac_er[ 0]:  0.00254 ac_er[ 1]:    2.87559 ac_er[ 2]:   0.000334 
+
+---------------------------
+line result: 5956.70020 
+ew (mA)      :  52.36696 
+ew error (mA):  0.47405 
+nfit : 1 
+line depth : 0.42816 
+FWHM : 0.11490 
+-------------------------
+int 2 status: 0
+
+line nº 66 searching for line 5983.69 in the interval [3783.14,6913.32]. Using rejt 0.993967 
+
+
+ LINES FOUND TO FIT 
+5983.70 5983.96 5984.02 
+
+ RESAMPLING 
+5983.70 5983.99 
+
+ GUESS COEFS :
+acoef[ 0]:  0.53824 acoef[ 1]:  400.00000 acoef[ 2]:  5983.70 
+acoef[ 3]:  0.96713 acoef[ 4]:  400.00000 acoef[ 5]:  5983.99 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.55598 acoef[ 1]:  158.03533 acoef[ 2]:  5983.68 
++-ac_er[ 0]:  0.00276 ac_er[ 1]:    2.54409 ac_er[ 2]:   0.000368 
+::acoef[ 3]:  0.97645 acoef[ 4]:    5.62550 acoef[ 5]:  5983.91 
++-ac_er[ 3]:  0.00133 ac_er[ 4]:    0.92564 ac_er[ 5]:   0.025851 
+
+---------------------------
+line result: 5983.68994 
+ew (mA)      :  62.60347 
+ew error (mA):  0.63624 
+nfit : 2 
+line depth : 0.44402 
+FWHM : 0.13245 
+-------------------------
+int 2 status: 0
+
+line nº 67 searching for line 5984.82 in the interval [3783.14,6913.32]. Using rejt 0.993970 
+
+
+ LINES FOUND TO FIT 
+5984.83 5985.21 
+
+ RESAMPLING 
+5984.83 5985.21 
+
+ GUESS COEFS :
+acoef[ 0]:  0.49013 acoef[ 1]:  400.00000 acoef[ 2]:  5984.83 
+acoef[ 3]:  0.97126 acoef[ 4]:  400.00000 acoef[ 5]:  5985.21 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.53188 acoef[ 1]:  133.07570 acoef[ 2]:  5984.82 
++-ac_er[ 0]:  0.00378 ac_er[ 1]:    2.51142 ac_er[ 2]:   0.000409 
+::acoef[ 3]:  0.96397 acoef[ 4]:    7.13587 acoef[ 5]:  5984.84 
++-ac_er[ 3]:  0.00340 ac_er[ 4]:    1.28247 ac_er[ 5]:   0.012598 
+
+---------------------------
+line result: 5984.81982 
+ew (mA)      :  95.83354 
+ew error (mA):  12.52859 
+nfit : 2 
+int 2 status: 0
+
+line nº 68 searching for line 5987.07 in the interval [3783.14,6913.32]. Using rejt 0.993974 
+
+
+ LINES FOUND TO FIT 
+5987.08 5987.40 5987.42 
+
+ RESAMPLING 
+5987.08 5987.41 
+
+ GUESS COEFS :
+acoef[ 0]:  0.55282 acoef[ 1]:  400.00000 acoef[ 2]:  5987.08 
+acoef[ 3]:  0.97519 acoef[ 4]:  400.00000 acoef[ 5]:  5987.41 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.56513 acoef[ 1]:  129.31113 acoef[ 2]:  5987.07 
++-ac_er[ 0]:  0.00291 ac_er[ 1]:    2.47181 ac_er[ 2]:   0.000617 
+::acoef[ 3]:  0.97055 acoef[ 4]:   47.16260 acoef[ 5]:  5987.33 
++-ac_er[ 3]:  0.00236 ac_er[ 4]:   13.74418 ac_er[ 5]:   0.011414 
+
+---------------------------
+line result: 5987.06982 
+ew (mA)      :  67.78307 
+ew error (mA):  0.79103 
+nfit : 2 
+line depth : 0.43487 
+FWHM : 0.14643 
+-------------------------
+int 2 status: 0
+
+line nº 69 searching for line 6005.55 in the interval [3783.14,6913.32]. Using rejt 0.994011 
+
+
+ LINES FOUND TO FIT 
+6005.56 
+
+ RESAMPLING 
+6005.56 
+
+ GUESS COEFS :
+acoef[ 0]:  0.81792 acoef[ 1]:  400.00000 acoef[ 2]:  6005.56 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.82028 acoef[ 1]:  195.52024 acoef[ 2]:  6005.54 
++-ac_er[ 0]:  0.00245 ac_er[ 1]:    6.19855 ac_er[ 2]:   0.000797 
+
+---------------------------
+line result: 6005.54980 
+ew (mA)      :  22.78136 
+ew error (mA):  0.47664 
+nfit : 1 
+line depth : 0.17972 
+FWHM : 0.11908 
+-------------------------
+int 2 status: 0
+
+line nº 70 searching for line 6024.06 in the interval [3783.14,6913.32]. Using rejt 0.994048 
+
+
+ LINES FOUND TO FIT 
+6024.08 
+
+ RESAMPLING 
+6024.08 
+
+ GUESS COEFS :
+acoef[ 0]:  0.38849 acoef[ 1]:  400.00000 acoef[ 2]:  6024.08 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.41025 acoef[ 1]:   90.01927 acoef[ 2]:  6024.06 
++-ac_er[ 0]:  0.00658 ac_er[ 1]:    2.31937 ac_er[ 2]:   0.000960 
+
+---------------------------
+line result: 6024.06006 
+ew (mA)      :  110.17300 
+ew error (mA):  1.87758 
+nfit : 1 
+line depth : 0.58975 
+FWHM : 0.17550 
+-------------------------
+int 2 status: 0
+
+line nº 71 searching for line 6027.06 in the interval [3783.14,6913.32]. Using rejt 0.994054 
+
+
+ LINES FOUND TO FIT 
+6027.07 
+
+ RESAMPLING 
+6027.07 
+
+ GUESS COEFS :
+acoef[ 0]:  0.53833 acoef[ 1]:  400.00000 acoef[ 2]:  6027.07 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.54399 acoef[ 1]:  163.31671 acoef[ 2]:  6027.06 
++-ac_er[ 0]:  0.00238 ac_er[ 1]:    1.97057 ac_er[ 2]:   0.000334 
+
+---------------------------
+line result: 6027.06006 
+ew (mA)      :  63.24608 
+ew error (mA):  0.50472 
+nfit : 1 
+line depth : 0.45601 
+FWHM : 0.13029 
+-------------------------
+int 2 status: 0
+
+line nº 72 searching for line 6034.04 in the interval [3783.14,6913.32]. Using rejt 0.994068 
+
+
+ LINES FOUND TO FIT 
+6034.06 
+
+ RESAMPLING 
+6034.06 
+
+ GUESS COEFS :
+acoef[ 0]:  0.93586 acoef[ 1]:  400.00000 acoef[ 2]:  6034.06 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.93773 acoef[ 1]:  186.63869 acoef[ 2]:  6034.04 
++-ac_er[ 0]:  0.00244 ac_er[ 1]:   17.89273 ac_er[ 2]:   0.002339 
+
+---------------------------
+line result: 6034.04004 
+ew (mA)      :  8.07944 
+ew error (mA):  0.50017 
+nfit : 1 
+line depth : 0.06227 
+FWHM : 0.12188 
+-------------------------
+int 2 status: 0
+
+line nº 73 searching for line 6035.34 in the interval [3783.14,6913.32]. Using rejt 0.994071 
+
+
+ LINES FOUND TO FIT 
+6035.35 
+
+ RESAMPLING 
+6035.35 
+
+ GUESS COEFS :
+acoef[ 0]:  0.95219 acoef[ 1]:  400.00000 acoef[ 2]:  6035.35 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.95521 acoef[ 1]:  237.39829 acoef[ 2]:  6035.34 
++-ac_er[ 0]:  0.00256 ac_er[ 1]:   32.04884 ac_er[ 2]:   0.003027 
+
+---------------------------
+line result: 6035.33984 
+ew (mA)      :  5.15216 
+ew error (mA):  0.45596 
+nfit : 1 
+line depth : 0.04479 
+FWHM : 0.10807 
+-------------------------
+int 2 status: 0
+
+line nº 74 searching for line 6054.08 in the interval [3783.14,6913.32]. Using rejt 0.994108 
+
+
+ LINES FOUND TO FIT 
+6054.08 
+
+ RESAMPLING 
+6054.08 
+
+ GUESS COEFS :
+acoef[ 0]:  0.92648 acoef[ 1]:  400.00000 acoef[ 2]:  6054.08 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.92545 acoef[ 1]:  199.14095 acoef[ 2]:  6054.07 
++-ac_er[ 0]:  0.00243 ac_er[ 1]:   15.19192 ac_er[ 2]:   0.001884 
+
+---------------------------
+line result: 6054.08008 
+ew (mA)      :  9.36391 
+ew error (mA):  0.46992 
+nfit : 1 
+line depth : 0.07455 
+FWHM : 0.11799 
+-------------------------
+int 2 status: 0
+
+line nº 75 searching for line 6056.01 in the interval [3783.14,6913.32]. Using rejt 0.994112 
+
+
+ LINES FOUND TO FIT 
+6056.02 6056.34 
+
+ RESAMPLING 
+6056.02 6056.34 
+
+ GUESS COEFS :
+acoef[ 0]:  0.52606 acoef[ 1]:  400.00000 acoef[ 2]:  6056.02 
+acoef[ 3]:  0.96977 acoef[ 4]:  400.00000 acoef[ 5]:  6056.34 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.53477 acoef[ 1]:  131.19777 acoef[ 2]:  6056.01 
++-ac_er[ 0]:  0.00271 ac_er[ 1]:    1.90114 ac_er[ 2]:   0.000437 
+::acoef[ 3]:  0.97707 acoef[ 4]:   46.64289 acoef[ 5]:  6056.34 
++-ac_er[ 3]:  0.00218 ac_er[ 4]:   12.19534 ac_er[ 5]:   0.011560 
+
+---------------------------
+line result: 6056.00977 
+ew (mA)      :  71.99049 
+ew error (mA):  0.66912 
+nfit : 2 
+line depth : 0.46523 
+FWHM : 0.14537 
+-------------------------
+int 2 status: 0
+
+line nº 76 searching for line 6065.49 in the interval [3783.14,6913.32]. Using rejt 0.994131 
+
+
+ LINES FOUND TO FIT 
+6065.50 
+
+ RESAMPLING 
+6065.50 
+
+ GUESS COEFS :
+acoef[ 0]:  0.33415 acoef[ 1]:  400.00000 acoef[ 2]:  6065.50 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.33865 acoef[ 1]:   99.82867 acoef[ 2]:  6065.49 
++-ac_er[ 0]:  0.00438 ac_er[ 1]:    1.52783 ac_er[ 2]:   0.000542 
+
+---------------------------
+line result: 6065.49023 
+ew (mA)      :  117.32205 
+ew error (mA):  1.18765 
+nfit : 1 
+line depth : 0.66135 
+FWHM : 0.16665 
+-------------------------
+int 2 status: 0
+
+line nº 77 searching for line 6078.49 in the interval [3783.14,6913.32]. Using rejt 0.994157 
+
+
+ LINES FOUND TO FIT 
+6078.51 
+
+ RESAMPLING 
+6078.51 
+
+ GUESS COEFS :
+acoef[ 0]:  0.51291 acoef[ 1]:  400.00000 acoef[ 2]:  6078.51 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.52654 acoef[ 1]:  118.44504 acoef[ 2]:  6078.49 
++-ac_er[ 0]:  0.00483 ac_er[ 1]:    2.79099 ac_er[ 2]:   0.000765 
+
+---------------------------
+line result: 6078.49023 
+ew (mA)      :  77.10781 
+ew error (mA):  1.20179 
+nfit : 1 
+line depth : 0.47346 
+FWHM : 0.15300 
+-------------------------
+int 2 status: 0
+
+line nº 78 searching for line 6079.01 in the interval [3783.14,6913.32]. Using rejt 0.994158 
+
+
+ LINES FOUND TO FIT 
+6079.02 
+
+ RESAMPLING 
+6079.02 
+
+ GUESS COEFS :
+acoef[ 0]:  0.67048 acoef[ 1]:  400.00000 acoef[ 2]:  6079.02 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.67124 acoef[ 1]:  168.84791 acoef[ 2]:  6079.01 
++-ac_er[ 0]:  0.00260 ac_er[ 1]:    3.09717 ac_er[ 2]:   0.000496 
+
+---------------------------
+line result: 6079.00977 
+ew (mA)      :  44.84449 
+ew error (mA):  0.54298 
+nfit : 1 
+line depth : 0.32876 
+FWHM : 0.12814 
+-------------------------
+int 2 status: 0
+
+line nº 79 searching for line 6082.72 in the interval [3783.14,6913.32]. Using rejt 0.994165 
+
+
+ LINES FOUND TO FIT 
+6082.35 6082.43 6082.48 6082.72 
+
+ RESAMPLING 
+6082.43 6082.72 
+
+ GUESS COEFS :
+acoef[ 0]:  0.95669 acoef[ 1]:  400.00000 acoef[ 2]:  6082.43 
+acoef[ 3]:  0.72502 acoef[ 4]:  400.00000 acoef[ 5]:  6082.72 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.95044 acoef[ 1]:   59.60740 acoef[ 2]:  6082.43 
++-ac_er[ 0]:  0.00182 ac_er[ 1]:    5.59456 ac_er[ 2]:   0.003904 
+::acoef[ 3]:  0.72512 acoef[ 4]:  208.84944 acoef[ 5]:  6082.71 
++-ac_er[ 3]:  0.00243 ac_er[ 4]:    4.48715 ac_er[ 5]:   0.000516 
+
+---------------------------
+line result: 6082.72021 
+ew (mA)      :  33.71320 
+ew error (mA):  0.46902 
+nfit : 2 
+line depth : 0.27488 
+FWHM : 0.11522 
+-------------------------
+int 2 status: 0
+
+line nº 80 searching for line 6089.57 in the interval [3783.14,6913.32]. Using rejt 0.994179 
+
+
+ LINES FOUND TO FIT 
+6089.58 
+
+ RESAMPLING 
+6089.58 
+
+ GUESS COEFS :
+acoef[ 0]:  0.73042 acoef[ 1]:  400.00000 acoef[ 2]:  6089.58 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.73562 acoef[ 1]:  177.61224 acoef[ 2]:  6089.57 
++-ac_er[ 0]:  0.00232 ac_er[ 1]:    3.60821 ac_er[ 2]:   0.000539 
+
+---------------------------
+line result: 6089.56982 
+ew (mA)      :  35.16103 
+ew error (mA):  0.47241 
+nfit : 1 
+line depth : 0.26438 
+FWHM : 0.12494 
+-------------------------
+int 2 status: 0
+
+line nº 81 searching for line 6094.38 in the interval [3783.14,6913.32]. Using rejt 0.994189 
+
+
+ LINES FOUND TO FIT 
+6094.39 
+
+ RESAMPLING 
+6094.39 
+
+ GUESS COEFS :
+acoef[ 0]:  0.85289 acoef[ 1]:  400.00000 acoef[ 2]:  6094.39 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.85943 acoef[ 1]:  139.38784 acoef[ 2]:  6094.38 
++-ac_er[ 0]:  0.00248 ac_er[ 1]:    5.67019 ac_er[ 2]:   0.001218 
+
+---------------------------
+line result: 6094.37988 
+ew (mA)      :  21.10299 
+ew error (mA):  0.56777 
+nfit : 1 
+line depth : 0.14057 
+FWHM : 0.14104 
+-------------------------
+int 2 status: 0
+
+line nº 82 searching for line 6096.67 in the interval [3783.14,6913.32]. Using rejt 0.994193 
+
+
+ LINES FOUND TO FIT 
+6096.68 
+
+ RESAMPLING 
+6096.68 
+
+ GUESS COEFS :
+acoef[ 0]:  0.72494 acoef[ 1]:  400.00000 acoef[ 2]:  6096.68 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.73181 acoef[ 1]:  155.70938 acoef[ 2]:  6096.67 
++-ac_er[ 0]:  0.00234 ac_er[ 1]:    3.14578 ac_er[ 2]:   0.000572 
+
+---------------------------
+line result: 6096.66992 
+ew (mA)      :  38.09385 
+ew error (mA):  0.50877 
+nfit : 1 
+line depth : 0.26819 
+FWHM : 0.13344 
+-------------------------
+int 2 status: 0
+
+line nº 83 searching for line 6098.25 in the interval [3783.14,6913.32]. Using rejt 0.994197 
+
+
+ LINES FOUND TO FIT 
+6098.26 
+
+ RESAMPLING 
+6098.26 
+
+ GUESS COEFS :
+acoef[ 0]:  0.87667 acoef[ 1]:  400.00000 acoef[ 2]:  6098.26 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.87851 acoef[ 1]:  163.46330 acoef[ 2]:  6098.25 
++-ac_er[ 0]:  0.00249 ac_er[ 1]:    7.80773 ac_er[ 2]:   0.001310 
+
+---------------------------
+line result: 6098.25000 
+ew (mA)      :  16.84268 
+ew error (mA):  0.53045 
+nfit : 1 
+line depth : 0.12149 
+FWHM : 0.13024 
+-------------------------
+int 2 status: 0
+
+line nº 84 searching for line 6120.25 in the interval [3783.14,6913.32]. Using rejt 0.994240 
+
+
+ LINES FOUND TO FIT 
+6120.26 
+
+ RESAMPLING 
+6120.26 
+
+ GUESS COEFS :
+acoef[ 0]:  0.95721 acoef[ 1]:  400.00000 acoef[ 2]:  6120.26 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.95581 acoef[ 1]:  198.07688 acoef[ 2]:  6120.26 
++-ac_er[ 0]:  0.00241 ac_er[ 1]:   26.75210 ac_er[ 2]:   0.003169 
+
+---------------------------
+line result: 6120.25000 
+ew (mA)      :  5.56506 
+ew error (mA):  0.48311 
+nfit : 1 
+line depth : 0.04419 
+FWHM : 0.11831 
+-------------------------
+int 2 status: 0
+
+line nº 85 searching for line 6127.91 in the interval [3783.14,6913.32]. Using rejt 0.994256 
+
+
+ LINES FOUND TO FIT 
+6127.92 6128.14 
+
+ RESAMPLING 
+6127.92 6128.14 
+
+ GUESS COEFS :
+acoef[ 0]:  0.63745 acoef[ 1]:  400.00000 acoef[ 2]:  6127.92 
+acoef[ 3]:  0.97492 acoef[ 4]:  400.00000 acoef[ 5]:  6128.14 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.65656 acoef[ 1]:  192.00553 acoef[ 2]:  6127.91 
++-ac_er[ 0]:  0.00356 ac_er[ 1]:    4.83567 ac_er[ 2]:   0.000491 
+::acoef[ 3]:  0.97459 acoef[ 4]:   15.61971 acoef[ 5]:  6128.04 
++-ac_er[ 3]:  0.00236 ac_er[ 4]:    3.05627 ac_er[ 5]:   0.022861 
+
+---------------------------
+line result: 6127.91016 
+ew (mA)      :  43.93033 
+ew error (mA):  0.71681 
+nfit : 2 
+line depth : 0.34344 
+FWHM : 0.12017 
+-------------------------
+int 2 status: 0
+
+line nº 86 searching for line 6151.62 in the interval [3783.14,6913.32]. Using rejt 0.994303 
+
+
+ LINES FOUND TO FIT 
+6151.63 
+
+ RESAMPLING 
+6151.63 
+
+ GUESS COEFS :
+acoef[ 0]:  0.61983 acoef[ 1]:  400.00000 acoef[ 2]:  6151.63 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.62643 acoef[ 1]:  172.57565 acoef[ 2]:  6151.62 
++-ac_er[ 0]:  0.00229 ac_er[ 1]:    2.44527 ac_er[ 2]:   0.000381 
+
+---------------------------
+line result: 6151.62012 
+ew (mA)      :  50.40348 
+ew error (mA):  0.47233 
+nfit : 1 
+line depth : 0.37357 
+FWHM : 0.12675 
+-------------------------
+int 2 status: 0
+
+line nº 87 searching for line 6157.73 in the interval [3783.14,6913.32]. Using rejt 0.994315 
+
+
+ LINES FOUND TO FIT 
+6157.74 
+
+ RESAMPLING 
+6157.74 
+
+ GUESS COEFS :
+acoef[ 0]:  0.57055 acoef[ 1]:  400.00000 acoef[ 2]:  6157.74 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.57587 acoef[ 1]:  145.92522 acoef[ 2]:  6157.73 
++-ac_er[ 0]:  0.00351 ac_er[ 1]:    2.78575 ac_er[ 2]:   0.000559 
+
+---------------------------
+line result: 6157.72998 
+ew (mA)      :  62.23135 
+ew error (mA):  0.78580 
+nfit : 1 
+line depth : 0.42413 
+FWHM : 0.13784 
+-------------------------
+int 2 status: 0
+
+line nº 88 searching for line 6159.38 in the interval [3783.14,6913.32]. Using rejt 0.994319 
+
+
+ LINES FOUND TO FIT 
+6159.40 
+
+ RESAMPLING 
+6159.40 
+
+ GUESS COEFS :
+acoef[ 0]:  0.90896 acoef[ 1]:  400.00000 acoef[ 2]:  6159.40 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.90705 acoef[ 1]:  143.91681 acoef[ 2]:  6159.38 
++-ac_er[ 0]:  0.00217 ac_er[ 1]:    7.99818 ac_er[ 2]:   0.001590 
+
+---------------------------
+line result: 6159.37988 
+ew (mA)      :  13.73256 
+ew error (mA):  0.49851 
+nfit : 1 
+line depth : 0.09295 
+FWHM : 0.13880 
+-------------------------
+int 2 status: 0
+
+line nº 89 searching for line 6165.36 in the interval [3783.14,6913.32]. Using rejt 0.994331 
+
+
+ LINES FOUND TO FIT 
+6165.37 
+
+ RESAMPLING 
+6165.37 
+
+ GUESS COEFS :
+acoef[ 0]:  0.66787 acoef[ 1]:  400.00000 acoef[ 2]:  6165.37 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.67140 acoef[ 1]:  162.86296 acoef[ 2]:  6165.36 
++-ac_er[ 0]:  0.00237 ac_er[ 1]:    2.71085 ac_er[ 2]:   0.000461 
+
+---------------------------
+line result: 6165.35986 
+ew (mA)      :  45.63918 
+ew error (mA):  0.50233 
+nfit : 1 
+line depth : 0.32860 
+FWHM : 0.13048 
+-------------------------
+int 2 status: 0
+
+line nº 90 searching for line 6173.34 in the interval [3783.14,6913.32]. Using rejt 0.994347 
+
+
+ LINES FOUND TO FIT 
+6173.35 
+
+ RESAMPLING 
+6173.35 
+
+ GUESS COEFS :
+acoef[ 0]:  0.51757 acoef[ 1]:  400.00000 acoef[ 2]:  6173.35 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.52072 acoef[ 1]:  155.60699 acoef[ 2]:  6173.34 
++-ac_er[ 0]:  0.00256 ac_er[ 1]:    1.91980 ac_er[ 2]:   0.000349 
+
+---------------------------
+line result: 6173.33984 
+ew (mA)      :  68.10035 
+ew error (mA):  0.55554 
+nfit : 1 
+line depth : 0.47928 
+FWHM : 0.13348 
+-------------------------
+int 2 status: 0
+
+line nº 91 searching for line 6180.21 in the interval [3783.14,6913.32]. Using rejt 0.994360 
+
+
+ LINES FOUND TO FIT 
+6179.94 6180.00 6180.22 
+
+ RESAMPLING 
+6179.97 6180.22 
+
+ GUESS COEFS :
+acoef[ 0]:  0.97294 acoef[ 1]:  400.00000 acoef[ 2]:  6179.97 
+acoef[ 3]:  0.59851 acoef[ 4]:  400.00000 acoef[ 5]:  6180.22 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.96621 acoef[ 1]:  164.62761 acoef[ 2]:  6179.99 
++-ac_er[ 0]:  0.00497 ac_er[ 1]:   66.07074 ac_er[ 2]:   0.009696 
+::acoef[ 3]:  0.60531 acoef[ 4]:  156.72148 acoef[ 5]:  6180.21 
++-ac_er[ 3]:  0.00481 ac_er[ 4]:    4.90215 ac_er[ 5]:   0.000832 
+
+---------------------------
+line result: 6180.20996 
+ew (mA)      :  55.88110 
+ew error (mA):  1.10830 
+nfit : 2 
+line depth : 0.39469 
+FWHM : 0.13301 
+-------------------------
+int 2 status: 0
+
+line nº 92 searching for line 6187.99 in the interval [3783.14,6913.32]. Using rejt 0.994376 
+
+
+ LINES FOUND TO FIT 
+6188.00 
+
+ RESAMPLING 
+6188.00 
+
+ GUESS COEFS :
+acoef[ 0]:  0.66188 acoef[ 1]:  400.00000 acoef[ 2]:  6188.00 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.66680 acoef[ 1]:  149.09830 acoef[ 2]:  6187.99 
++-ac_er[ 0]:  0.00220 ac_er[ 1]:    2.27825 ac_er[ 2]:   0.000442 
+
+---------------------------
+line result: 6187.99023 
+ew (mA)      :  48.36657 
+ew error (mA):  0.48882 
+nfit : 1 
+line depth : 0.33320 
+FWHM : 0.13637 
+-------------------------
+int 2 status: 0
+
+line nº 93 searching for line 6200.32 in the interval [3783.14,6913.32]. Using rejt 0.994401 
+
+
+ LINES FOUND TO FIT 
+6200.33 
+
+ RESAMPLING 
+6200.33 
+
+ GUESS COEFS :
+acoef[ 0]:  0.49761 acoef[ 1]:  400.00000 acoef[ 2]:  6200.33 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.50209 acoef[ 1]:  142.03756 acoef[ 2]:  6200.32 
++-ac_er[ 0]:  0.00391 ac_er[ 1]:    2.57388 ac_er[ 2]:   0.000537 
+
+---------------------------
+line result: 6200.31982 
+ew (mA)      :  74.04986 
+ew error (mA):  0.88747 
+nfit : 1 
+line depth : 0.49791 
+FWHM : 0.13971 
+-------------------------
+int 2 status: 0
+
+line nº 94 searching for line 5525.12 in the interval [3783.14,6913.32]. Using rejt 0.993050 
+
+
+ LINES FOUND TO FIT 
+5524.97 5525.13 
+
+ RESAMPLING 
+5524.97 5525.13 
+
+ GUESS COEFS :
+acoef[ 0]:  0.97781 acoef[ 1]:  400.00000 acoef[ 2]:  5524.97 
+acoef[ 3]:  0.90931 acoef[ 4]:  400.00000 acoef[ 5]:  5525.13 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.97457 acoef[ 1]:  261.71942 acoef[ 2]:  5524.98 
++-ac_er[ 0]:  0.00326 ac_er[ 1]:  132.84962 ac_er[ 2]:   0.011071 
+::acoef[ 3]:  0.90878 acoef[ 4]:  204.23201 acoef[ 5]:  5525.12 
++-ac_er[ 3]:  0.00298 ac_er[ 4]:   27.47315 ac_er[ 5]:   0.003371 
+
+---------------------------
+line result: 5525.12012 
+ew (mA)      :  11.31330 
+ew error (mA):  0.84579 
+nfit : 2 
+line depth : 0.09122 
+FWHM : 0.11651 
+-------------------------
+int 2 status: 0
+
+line nº 95 searching for line 5534.85 in the interval [3783.14,6913.32]. Using rejt 0.993070 
+
+
+ LINES FOUND TO FIT 
+5534.67 5534.85 
+
+ RESAMPLING 
+5534.67 5534.85 
+
+ GUESS COEFS :
+acoef[ 0]:  0.91653 acoef[ 1]:  400.00000 acoef[ 2]:  5534.67 
+acoef[ 3]:  0.56683 acoef[ 4]:  400.00000 acoef[ 5]:  5534.85 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.91543 acoef[ 1]:  239.20554 acoef[ 2]:  5534.66 
++-ac_er[ 0]:  0.00302 ac_er[ 1]:   22.90670 ac_er[ 2]:   0.002061 
+::acoef[ 3]:  0.56831 acoef[ 4]:  182.08748 acoef[ 5]:  5534.84 
++-ac_er[ 3]:  0.00284 ac_er[ 4]:    3.22255 ac_er[ 5]:   0.000429 
+
+---------------------------
+line result: 5534.85010 
+ew (mA)      :  56.70328 
+ew error (mA):  0.62531 
+nfit : 2 
+line depth : 0.43169 
+FWHM : 0.12340 
+-------------------------
+int 2 status: 0
+
+line nº 96 searching for line 5696.09 in the interval [3783.14,6913.32]. Using rejt 0.993392 
+
+
+ LINES FOUND TO FIT 
+5696.11 
+
+ RESAMPLING 
+5696.11 
+
+ GUESS COEFS :
+acoef[ 0]:  0.89726 acoef[ 1]:  400.00000 acoef[ 2]:  5696.11 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.89551 acoef[ 1]:  214.40141 acoef[ 2]:  5696.09 
++-ac_er[ 0]:  0.00279 ac_er[ 1]:   13.50479 ac_er[ 2]:   0.001485 
+
+---------------------------
+line result: 5696.08984 
+ew (mA)      :  12.64877 
+ew error (mA):  0.52190 
+nfit : 1 
+line depth : 0.10449 
+FWHM : 0.11372 
+-------------------------
+int 2 status: 0
+
+line nº 97 searching for line 5991.38 in the interval [3783.14,6913.32]. Using rejt 0.993983 
+
+
+ LINES FOUND TO FIT 
+5991.22 5991.38 
+
+ RESAMPLING 
+5991.22 5991.38 
+
+ GUESS COEFS :
+acoef[ 0]:  0.95841 acoef[ 1]:  400.00000 acoef[ 2]:  5991.22 
+acoef[ 3]:  0.77140 acoef[ 4]:  400.00000 acoef[ 5]:  5991.38 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.95890 acoef[ 1]:  322.87954 acoef[ 2]:  5991.23 
++-ac_er[ 0]:  0.00287 ac_er[ 1]:   71.72698 ac_er[ 2]:   0.004369 
+::acoef[ 3]:  0.77470 acoef[ 4]:  178.14755 acoef[ 5]:  5991.37 
++-ac_er[ 3]:  0.00248 ac_er[ 4]:    6.65136 ac_er[ 5]:   0.000930 
+
+---------------------------
+line result: 5991.37988 
+ew (mA)      :  29.91911 
+ew error (mA):  0.64819 
+nfit : 2 
+line depth : 0.22530 
+FWHM : 0.12475 
+-------------------------
+int 2 status: 0
+
+line nº 98 searching for line 6084.11 in the interval [3783.14,6913.32]. Using rejt 0.994168 
+
+
+ LINES FOUND TO FIT 
+6084.12 
+
+ RESAMPLING 
+6084.12 
+
+ GUESS COEFS :
+acoef[ 0]:  0.84236 acoef[ 1]:  400.00000 acoef[ 2]:  6084.12 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.84549 acoef[ 1]:  179.22490 acoef[ 2]:  6084.11 
++-ac_er[ 0]:  0.00234 ac_er[ 1]:    6.30422 ac_er[ 2]:   0.000922 
+
+---------------------------
+line result: 6084.10986 
+ew (mA)      :  20.45628 
+ew error (mA):  0.47471 
+nfit : 1 
+line depth : 0.15451 
+FWHM : 0.12438 
+-------------------------
+int 2 status: 0
+
+line nº 99 searching for line 6113.32 in the interval [3783.14,6913.32]. Using rejt 0.994227 
+
+
+ LINES FOUND TO FIT 
+6112.93 6113.13 6113.33 
+
+ RESAMPLING 
+6112.93 6113.13 6113.33 
+
+ GUESS COEFS :
+acoef[ 0]:  0.93679 acoef[ 1]:  400.00000 acoef[ 2]:  6112.93 
+acoef[ 3]:  0.96983 acoef[ 4]:  400.00000 acoef[ 5]:  6113.13 
+acoef[ 6]:  0.91255 acoef[ 7]:  400.00000 acoef[ 8]:  6113.33 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.93717 acoef[ 1]:  114.09257 acoef[ 2]:  6112.93 
++-ac_er[ 0]:  0.00213 ac_er[ 1]:   11.82928 ac_er[ 2]:   0.003141 
+::acoef[ 3]:  0.97102 acoef[ 4]:  204.18042 acoef[ 5]:  6113.12 
++-ac_er[ 3]:  0.00243 ac_er[ 4]:   55.58351 ac_er[ 5]:   0.005961 
+::acoef[ 6]:  0.91688 acoef[ 7]:  175.94504 acoef[ 8]:  6113.32 
++-ac_er[ 6]:  0.00237 ac_er[ 7]:   13.40527 ac_er[ 8]:   0.001819 
+
+---------------------------
+line result: 6113.31982 
+ew (mA)      :  11.10686 
+ew error (mA):  0.52821 
+nfit : 3 
+line depth : 0.08312 
+FWHM : 0.12553 
+-------------------------
+int 2 status: 0
+
+line nº 100 searching for line 6149.25 in the interval [3783.14,6913.32]. Using rejt 0.994298 
+
+
+ LINES FOUND TO FIT 
+6149.26 
+
+ RESAMPLING 
+6149.26 
+
+ GUESS COEFS :
+acoef[ 0]:  0.74286 acoef[ 1]:  400.00000 acoef[ 2]:  6149.26 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.74406 acoef[ 1]:  159.45104 acoef[ 2]:  6149.25 
++-ac_er[ 0]:  0.00222 ac_er[ 1]:    3.20062 ac_er[ 2]:   0.000560 
+
+---------------------------
+line result: 6149.25000 
+ew (mA)      :  35.92459 
+ew error (mA):  0.47641 
+nfit : 1 
+line depth : 0.25594 
+FWHM : 0.13186 
+-------------------------
+int 2 status: 0
+
+line nº 101 searching for line 6238.39 in the interval [3783.14,6913.32]. Using rejt 0.994477 
+
+
+ LINES FOUND TO FIT 
+6238.40 
+
+ RESAMPLING 
+6238.40 
+
+ GUESS COEFS :
+acoef[ 0]:  0.71866 acoef[ 1]:  400.00000 acoef[ 2]:  6238.40 
+
+ FITTED COEFS :
+::acoef[ 0]:  0.72537 acoef[ 1]:  124.81436 acoef[ 2]:  6238.39 
++-ac_er[ 0]:  0.00313 ac_er[ 1]:    3.29118 ac_er[ 2]:   0.000834 
+
+---------------------------
+line result: 6238.39014 
+ew (mA)      :  43.56956 
+ew error (mA):  0.75972 
+nfit : 1 
+line depth : 0.27463 
+FWHM : 0.14904 
+-------------------------
+int 2 status: 0
