@@ -4,6 +4,9 @@ MOOG_Make="make -f Makefile.rh64silent"
 
 if [ "$1" = "make" ]; then
 
+  echo "Creating local directories"
+  mkdir running_dir
+  mkdir save_folder
   echo "Setting the installation path on code"
   sed -i "21s@.*@  local_install_path=\"$(pwd)/\"@"  Run_Programs.py
   echo "Compiling ARES..." 
@@ -43,6 +46,9 @@ if [ "$1" = "make" ]; then
 else
 
   if [ $1 = "clean" ]; then
+    echo "Deleting Local directories"
+    rm -rf running_dir
+    rm -rf save_folder
     echo "Cleaning ARES..."
     cd ARESv4
     make clean
