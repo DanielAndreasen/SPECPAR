@@ -7,3 +7,11 @@ TBD...
 
 wget --user [user_name] --password [Password] http://www.astro.up.pt/~sousasag/protected/codes_specpar.tar
 
+tar xvf codes_specpar.tar
+
+rm codes_specpar.tar
+
+./recompile.bash make
+
+./Main.py
+
