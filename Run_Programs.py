@@ -18,7 +18,7 @@ def get_install_dir():
   """
   Set the local variables with the instalation path
   """
-  local_install_path="/home/sousasag/Programas/SPECPAR/"
+  local_install_path="/home/sousasag/Programas/GIT_projects/SPECPAR/"
 #  return read_config_install('specpar','install_path')
   return local_install_path
 
@@ -69,7 +69,7 @@ def create_model_kurucz(path, teff, logg, feh, vtur):
   process.wait()
   os.chdir(owd)
 
-def create_model_kurucz(path, teff, logg, feh, vtur):
+def create_model_marcs(path, teff, logg, feh, vtur):
   
   owd = os.getcwd()
   os.chdir(path)
