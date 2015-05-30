@@ -2,44 +2,80 @@
 
 MOOG_Make="make -f Makefile.rh64silent"
 
-if [ "$1" = "make" ]; then
-
+function setup_dirs(){
   echo "Creating local directories"
   mkdir running_dir
   mkdir save_folder
   echo "Setting the installation path on code"
   sed -i "21s@.*@  local_install_path=\"$(pwd)/\"@"  Run_Programs.py
+}
+
+function compile_ARES(){
   echo "Compiling ARES..." 
   cd ARESv4
-  make
+  make &> compiling_ares.log
   cd ..
+  if [ -f ARESv4/dist/Debug/GNU-Linux-x86/aresv4 ];
+  then
+    echo "ARES compiled sucessfully"
+  else
+    echo "ARES did not compile. Check file: ARESv4/compiling_ares.log"
+    exit
+  fi
+}
+
+function compile_interpol(){
   echo "Compiling interpolation of KURUCZ models..." 
   cd interpol_models
-  make
+  make &> compiling_interpol.log
   cd ..
   echo "Compiling interpolation of MARCS models..." 
   cd interpol_models_marcs
-  make
+  make &> compiling_interpol.log
   cd ..
+}
+
+function compile_MOOG(){
   echo "Compiling MOOG2013..." 
   cd MOOG2013
   echo "Setting the installation MOOG path"
   sed -i "22s@.*@     .  '$(pwd)'@"  Moogsilent.f
-  $MOOG_Make
+  $MOOG_Make &> compiling_MOOG.log
   cd ..
+}
+
+function compile_minimization(){
   echo "Compiling minimization Amoeba+Amebsa..." 
   cat Amebsa_tunned/main.cbase | sed s@"FULLMOOGPATHHERE"@"$(pwd)/MOOG2013/./MOOGSILENT"@g | sed s@"INTERPOLPATHHERE"@"$(pwd)/interpol_models/"@g > Amebsa_tunned/main.c
   cd Amebsa_tunned
-  make
+  make &> compiling_amebsa_kur.log
   mv dist/Debug/GNU-Linux-x86/amebsa_tunned dist/Debug/GNU-Linux-x86/amebsa_tunned_kurucz
   cd ..
   cat Amebsa_tunned/main.cbase_marcs | sed s@"FULLMOOGPATHHERE"@"$(pwd)/MOOG2013/./MOOGSILENT"@g | sed s@"INTERPOLPATHHERE"@"$(pwd)/interpol_models_marcs/"@g > Amebsa_tunned/main.c
   cd Amebsa_tunned
-  make
+  make &> compiling_amebsa_mar.log
   mv dist/Debug/GNU-Linux-x86/amebsa_tunned dist/Debug/GNU-Linux-x86/amebsa_tunned_marcs
   cd ..
+}
+
+function clean_ARES(){
+    echo "Cleaning ARES..."
+    cd ARESv4
+    make clean > /dev/null
+    rm -rf compiling_ares.log
+    cd ..
+}
+
+
+if [ "$1" = "make" ]; then
+  setup_dirs
+  compile_ARES
+  compile_interpol
+  compile_MOOG
+  compile_minimization
+  echo "Compiling tmcalc module"
   cd tmcalc_cython
-  python setup.py build_ext --inplace
+  python setup.py build_ext --inplace &> compile_tmcalc.log
   cd ..
 
 
@@ -49,10 +85,7 @@ else
     echo "Deleting Local directories"
     rm -rf running_dir
     rm -rf save_folder
-    echo "Cleaning ARES..."
-    cd ARESv4
-    make clean
-    cd ..
+    clean_ARES
     echo "Cleaning interpolation of KURUCZ models..." 
     cd interpol_models
     make clean
