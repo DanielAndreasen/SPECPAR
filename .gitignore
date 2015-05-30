@@ -7,3 +7,8 @@ Amoeba_tunned/
 Amebsa_tunned/
 save_folder/
 running_dir/
+ARESv4/build/
+ARESv4/dist/
+SPECPAR.log
+tmcalc_cython/build/
+tmcalc_cython/tmcalc_module.so
