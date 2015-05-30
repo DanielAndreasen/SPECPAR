@@ -1,7 +1,7 @@
 [ares]
-specfits='/home/sousasag/posdoc/spectra/KEPLER/wroclaw/ELODIE_JOANNA/elodie/HD185351n.fits'
-readlinedat='/home/sousasag/posdoc/aluno/maria/linelist_coolteff/maria_list_cool_teff.dat'
-fileout='HD185351.ares'
+specfits='../ARESv4/sun_harps_ganymede.fits'
+readlinedat='../linelistDir/maria_list_cool_teff.dat'
+fileout='sun.ares'
 lambdai=3600.
 lambdaf=9000.
 smoothder=4
