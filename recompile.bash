@@ -165,6 +165,7 @@ if [ "$1" = "make" ]; then
   setup_dirs
   compile_ARES
   compile_interpol
+  compile_MOOG
   compile_minimization
   compile_tmcalc
   echo "SPECPAR compiled sucessfully"
