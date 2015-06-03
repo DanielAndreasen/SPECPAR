@@ -38,17 +38,18 @@ def get_ew(path, line_data):
   ew_calc = np.loadtxt(path+'abund_plan_tspec.test', skiprows = 5, usecols = (6,), unpack= True)
   return ew_calc
 
-def calib_loggf(path, line_data):
+def calib_loggf(path, line_data, loggf_i, loggf_f):
+  print line_data
   ew_sun = line_data['ew']
   ew_calc = -1
   loggf = line_data['loggf']
-  a1 = -8.
-  b1 = -0.1
+  a1 = loggf_i
+  b1 = loggf_f
   i = 0
-  while abs(ew_sun - ew_calc) > 0.05:
+  while abs(ew_sun - ew_calc) > 0.05 and i < 40:
     i += 1
     c1 = ( b1 - a1 ) / 2. + a1
-#    print i, ew_sun, ew_calc, c1
+    print i, ew_sun, ew_calc, c1
     line_data['loggf'] = c1
     ew_calc = get_ew(path, line_data)
     if ew_calc - ew_sun < 0:
@@ -56,7 +57,11 @@ def calib_loggf(path, line_data):
     else:
       b1=c1
 #  print ew_calc, ew_sun
-  return c1
+  if i < 40:
+    return c1
+  else:
+    line_data['loggf']=loggf
+    return 10000+loggf
 
 def recalibrate_loggf_marcs(path, filein, fileout):
   rp.create_model_marcs(path, 5777, 4.44, 0.0, 1.0)
@@ -77,8 +82,11 @@ def recalibrate_loggf_kurucz(path, filein, fileout):
   rp.create_model_kurucz(path, 5777, 4.44, 0.0, 1.0)
   lines_data = read_linelist_file_ew(path,'../linelistDir/full_linelist.dat')
   for i,line in enumerate(lines_data):
-    print i, len(lines_data)
-    new_loggf = calib_loggf(path, line)
+    print "--->", i, len(lines_data)
+    new_loggf = calib_loggf(path, line, -8., -0.1)
+    if new_loggf > 1000:
+      print "Trying positive numbers"
+      new_loggf = calib_loggf(path, line, -0.1, 8.0)
     line['loggf'] = new_loggf
 
   fileout = open(fileout,'w')
@@ -98,7 +106,7 @@ def main():
   path = 'running_dir/'
 #  recalibrate_loggf_marcs(path,'../linelistDir/full_linelist.dat',path+'out_file')
   recalibrate_loggf_kurucz(path,'../linelistDir/full_linelist.dat',path+'full_calibrated_kur.dat')
-  recalibrate_loggf_marcs(path,'../linelistDir/full_linelist.dat',path+'full_calibrated_mar.dat')
+#  recalibrate_loggf_marcs(path,'../linelistDir/full_linelist.dat',path+'full_calibrated_mar.dat')
 
 #  rp.create_model_marcs(path, 5777, 4.40, 0.0, 1.0)
 #  rp.create_model_kurucz(path, 5777, 4.40, 0.0, 1.0)
