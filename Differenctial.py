@@ -58,6 +58,37 @@ def calib_loggf(path, line_data):
 #  print ew_calc, ew_sun
   return c1
 
+def recalibrate_loggf_marcs(path, filein, fileout):
+  rp.create_model_marcs(path, 5777, 4.44, 0.0, 1.0)
+  lines_data = read_linelist_file_ew(path,'../linelistDir/full_linelist.dat')
+  for i,line in enumerate(lines_data):
+    print i, len(lines_data)
+    new_loggf = calib_loggf(path, line)
+    line['loggf'] = new_loggf
+
+  fileout = open(fileout,'w')
+  fileout.write('WL          E.P.     loggf    ele      num    EWsun\n')
+  fileout.write('------      -----    -----   ----      ----   -----\n')
+  for datai in lines_data:
+    fileout.write('%7.2f %8.2f  %9.3f %5s %8.1f %8.1f \n' % (float(datai['lambda_rest']),float(datai['EP']),float(datai['loggf']),datai['ele'],float(datai['atom']),float(datai['ew'])))
+  fileout.close()
+
+def recalibrate_loggf_kurucz(path, filein, fileout):
+  rp.create_model_kurucz(path, 5777, 4.44, 0.0, 1.0)
+  lines_data = read_linelist_file_ew(path,'../linelistDir/full_linelist.dat')
+  for i,line in enumerate(lines_data):
+    print i, len(lines_data)
+    new_loggf = calib_loggf(path, line)
+    line['loggf'] = new_loggf
+
+  fileout = open(fileout,'w')
+  fileout.write('WL          E.P.     loggf    ele      num    EWsun\n')
+  fileout.write('------      -----    -----   ----      ----   -----\n')
+  for datai in lines_data:
+    fileout.write('%7.2f %8.2f  %9.3f %5s %8.1f %8.1f \n' % (float(datai['lambda_rest']),float(datai['EP']),float(datai['loggf']),datai['ele'],float(datai['atom']),float(datai['ew'])))
+  fileout.close()
+
+
 
   
 
@@ -65,13 +96,17 @@ def calib_loggf(path, line_data):
 ### Main program:
 def main():
   path = 'running_dir/'
-  rp.create_model_marcs(path, 5777, 4.40, 0.0, 1.0)
+#  recalibrate_loggf_marcs(path,'../linelistDir/full_linelist.dat',path+'out_file')
+  recalibrate_loggf_kurucz(path,'../linelistDir/full_linelist.dat',path+'full_calibrated_kur.dat')
+  recalibrate_loggf_marcs(path,'../linelistDir/full_linelist.dat',path+'full_calibrated_mar.dat')
+
+#  rp.create_model_marcs(path, 5777, 4.40, 0.0, 1.0)
 #  rp.create_model_kurucz(path, 5777, 4.40, 0.0, 1.0)
-  lines_data = read_linelist_file_ew(path,'../linelistDir/full_linelist.dat')
-  for line in lines_data[:10]:
-    print line['lambda_rest'], line['loggf']
-    new_logf = calib_loggf(path, line)
-    print new_logf
+#  lines_data = read_linelist_file_ew(path,'../linelistDir/full_linelist.dat')
+#  for line in lines_data[:10]:
+#    print line['lambda_rest'], line['loggf']
+#    new_logf = calib_loggf(path, line)
+#    print new_logf
 
 
 #  create_lines_ew_moog(path+'lines_ew.in', lines_data)
