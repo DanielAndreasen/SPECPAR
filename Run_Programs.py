@@ -99,7 +99,7 @@ def create_ewfind_par(path, linelist_ares):
 def run_MOOG(path, driver):
   owd = os.getcwd()
   os.chdir(path)
-  os.system("echo "+driver+" | "+get_install_dir()+"MOOG2013/./MOOGSILENT")
+  os.system("echo "+driver+" | "+get_install_dir()+"MOOG2013/./MOOGSILENT > /dev/null 2>&1")
   os.system("rm a")
   os.chdir(owd)
 
