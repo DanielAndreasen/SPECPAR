@@ -88,6 +88,14 @@ def create_abfind_par(path, linelist_ares):
   os.system("echo \"lines_in      '"+linelist_ares+"'\" >> abfind.par" )
   os.chdir(owd)
 
+def create_ewfind_par(path, linelist_ares):
+  owd = os.getcwd()
+  os.chdir(path)
+  os.system("cp "+get_install_dir()+"Amebsa_tunned/ewfind.par.base ewfind.par")
+  os.system("echo \"lines_in      '"+linelist_ares+"'\" >> ewfind.par" )
+  os.chdir(owd)
+
+
 def run_MOOG(path, driver):
   owd = os.getcwd()
   os.chdir(path)
