@@ -97,11 +97,21 @@ def create_ewfind_par(path, linelist_ares):
 
 
 def run_MOOG(path, driver):
+  run_MOOG2013(path, driver)
+  
+def run_MOOG2013(path, driver):
   owd = os.getcwd()
   os.chdir(path)
   os.system("echo "+driver+" | "+get_install_dir()+"MOOG2013/./MOOGSILENT > /dev/null 2>&1")
   os.system("rm a")
   os.chdir(owd)
+
+def run_MOOG2014(path, driver):
+  owd = os.getcwd()
+  os.chdir(path)
+  os.system("echo "+driver+" | "+get_install_dir()+"MOOG2014/./MOOGSILENT > /dev/null 2>&1")
+  os.system("rm a")
+  os.chdir(owd)    
 
 def run_amebsa_prior(path,run_path,filename_lines,teff, logg, feh, vtur, models):
   owd = os.getcwd()

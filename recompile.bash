@@ -62,6 +62,19 @@ function compile_MOOG(){
     exit
   fi
   cd ..
+  echo "Compiling MOOG2014..." 
+  cd MOOG2014
+#  echo "Setting the installation MOOG path"
+  sed -i "22s@.*@     .  '$(pwd)'@"  Moogsilent.f
+  $MOOG_Make &> compiling_MOOG.log
+  if [ -f MOOGSILENT ];
+  then
+    echo "MOOG compiled sucessfully"
+  else
+    echo "MOOG did not compile. Check file: MOOG2014/compiling_MOOG.log"
+    exit
+  fi
+  cd ..
 }
 
 function compile_minimization(){
@@ -136,6 +149,11 @@ function clean_interpolation(){
 function clean_MOOG(){
   echo "Cleaning MOOG2013..." 
   cd MOOG2013
+  rm *.o MOOGSILENT
+  rm compiling_MOOG.log
+  cd ..
+  echo "Cleaning MOOG2014..." 
+  cd MOOG2014
   rm *.o MOOGSILENT
   rm compiling_MOOG.log
   cd ..
