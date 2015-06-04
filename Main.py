@@ -148,7 +148,7 @@ def run_chain_parameters():
   ## CREATE folders
 
   # # Running ARES
-  linelist_ew = rp.get_install_dir()+rc.read_config_param('linelists','tmcalc_linelist').replace("'","")
+  linelist_ew = rp.get_install_dir()+rc.read_config_param('linelists','iron_parameters').replace("'","")
   rp.ares_make_mine_opt(run_path,linelist_ew)
   logging.info('ARES Started')
   rp.run_ares(run_path)

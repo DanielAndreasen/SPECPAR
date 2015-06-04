@@ -1,6 +1,6 @@
 [ares]
 specfits='../ARESv4/sun_harps_ganymede.fits'
-readlinedat='../linelistDir/maria_list_cool_teff.dat'
+readlinedat='../linelistDir/maria_list_cool_teff_kur_m2013.dat'
 fileout='sun.ares'
 lambdai=3600.
 lambdaf=9000.
@@ -13,7 +13,7 @@ plots_flag=1
 rvmask='3,6021.8,6024.06,6027.06,6024.06,20'
 [linelists]
 tmcalc_linelist='linelistDir/ultimate_list.dat'
-iron_parameters='linelistDir/maria_list_cool_teff.dat'
+iron_parameters='linelistDir/maria_list_cool_teff_kur_m2013.dat'
 Ti_Abund='linelistDir/Ti_lines.rdb'
 Ni_Abund='linelistDir/Ni_lines.rdb'
 Co_Abund='linelistDir/Co_lines.rdb'

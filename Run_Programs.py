@@ -98,7 +98,7 @@ def create_ewfind_par(path, linelist_ares):
 
 def run_MOOG(path, driver):
   run_MOOG2013(path, driver)
-  
+
 def run_MOOG2013(path, driver):
   owd = os.getcwd()
   os.chdir(path)
