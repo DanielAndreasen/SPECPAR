@@ -98,8 +98,8 @@ def recalibrate_loggf_kurucz(path, filein, fileout):
 ### Main program:
 def main():
   path = 'running_dir/'
-  recalibrate_loggf_kurucz(path,'../linelistDir/full_linelist.dat',path+'full_calibrated_kur.dat')
-  recalibrate_loggf_marcs(path,'../linelistDir/full_linelist.dat',path+'full_calibrated_mar.dat')
+  recalibrate_loggf_kurucz(path,'../linelistDir/list_iron_complete.dat',path+'list_iron_complete_calibrated_kur.dat')
+  recalibrate_loggf_marcs(path,'../linelistDir/list_iron_complete.dat',path+'list_iron_complete_calibrated_mar.dat')
 
 #  rp.create_model_marcs(path, 5777, 4.40, 0.0, 1.0)
 #  rp.create_model_kurucz(path, 5777, 4.40, 0.0, 1.0)

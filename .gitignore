@@ -12,3 +12,5 @@ ARESv4/dist/
 SPECPAR.log
 tmcalc_cython/build/
 tmcalc_cython/tmcalc_module.so
+ARESv4/*.log
+tmcalc_cython/*.log
