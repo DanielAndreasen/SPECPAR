@@ -5,7 +5,7 @@
 
 import numpy as np
 import Run_Programs as rp
-
+import os
 
 
 
@@ -32,13 +32,21 @@ def create_lines_ew_moog(filename_out,lines_data):
   fileout.close()
 
 def get_ew(path, line_data):
+  """
+  Get the EW from the moog file output. (just for 1 line in input list for MOOG)
+
+  Using MOOG 2014...
+  """	
   create_lines_ew_moog(path+'lines_ew.in', [line_data])
   rp.create_ewfind_par(path,'lines_ew.in')
-  rp.run_MOOG(path,'ewfind.par')
+  rp.run_MOOG2014(path,'ewfind.par')
   loggf_out, ew_calc = np.loadtxt(path+'abund_plan_tspec.test', skiprows = 5, usecols = (2, 6), unpack= True)
   return loggf_out, ew_calc
 
 def calib_loggf(path, line_data, loggf_i, loggf_f):
+  """
+  Find the calibrated loggf for a individual line with the EW for the SUN
+  """	
   print line_data
   ew_sun = line_data['ew']
   ew_calc = -1
@@ -67,6 +75,18 @@ def calib_loggf(path, line_data, loggf_i, loggf_f):
 
 
 def recalibrate_loggf(path, filein, fileout):
+  """
+  Runs the recalibration for a list of lines given in the input file
+  Format of input file:
+  WL  Excit loggf ele num ew_sun
+  ------- ----- ------  --- ----  ------
+  4000.01 2.83   -3.687    Fe   26.0     7.3
+  4007.27 2.76   -1.666    Fe   26.0    87.7
+  4010.18 3.64   -2.031    Fe   26.0    35.0
+  4014.27 3.02   -2.330    Fe   26.0    47.3
+  4080.88 3.65   -1.543    Fe   26.0    58.2
+  ...
+  """
   lines_data = read_linelist_file_ew(path,filein)
   for i,line in enumerate(lines_data):
     print "--->", i, len(lines_data)
@@ -84,22 +104,29 @@ def recalibrate_loggf(path, filein, fileout):
 
 
 def recalibrate_loggf_marcs(path, filein, fileout):
+  """
+  Differential recalibration of loggf using the MARCS models
+  """  
   rp.create_model_marcs(path, 5777, 4.44, 0.0, 1.0)
   recalibrate_loggf(path, filein, fileout)
 
 def recalibrate_loggf_kurucz(path, filein, fileout):
+  """
+  Differential recalibration of loggf using the KURUCZ models
+  """  
   rp.create_model_kurucz(path, 5777, 4.44, 0.0, 1.0)
   recalibrate_loggf(path, filein, fileout)
 
-
-  
 
 
 ### Main program:
 def main():
   path = 'running_dir/'
-  recalibrate_loggf_kurucz(path,'../linelistDir/maria_list_cool_teff.dat',path+'maria_list_cool_teff_kur_m2013.dat')
-  recalibrate_loggf_marcs(path,'../linelistDir/maria_list_cool_teff.dat',path+'maria_list_cool_teff_mar_m2013.dat')
+  os.system('rm '+path+'batch.par')
+#  recalibrate_loggf_kurucz(path,'../linelistDir/maria_list_cool_teff.dat',path+'maria_list_cool_teff_kur_m2013.dat')
+#  recalibrate_loggf_marcs(path,'../linelistDir/maria_list_cool_teff.dat',path+'maria_list_cool_teff_mar_m2013.dat')
+  recalibrate_loggf_kurucz(path,'../linelistDir/list_iron_complete.dat',path+'list_iron_complete_calibrated_kur_m2014.dat')
+  recalibrate_loggf_marcs(path,'../linelistDir/list_iron_complete.dat',path+'list_iron_complete_calibrated_mar_m2014.dat')
 
 #  rp.create_model_marcs(path, 5777, 4.40, 0.0, 1.0)
 #  rp.create_model_kurucz(path, 5777, 4.40, 0.0, 1.0)
@@ -109,8 +136,10 @@ def main():
 #    new_logf = calib_loggf(path, line)
 #    print new_logf
 
-
-#  create_lines_ew_moog(path+'lines_ew.in', lines_data)
+  lines_data = read_linelist_file_ew(path,'list_iron_complete_calibrated_kur_m2014.dat')
+  create_lines_ew_moog(path+'lines_ew_kur.in', lines_data)
+  lines_data = read_linelist_file_ew(path,'list_iron_complete_calibrated_mar_m2014.dat')
+  create_lines_ew_moog(path+'lines_ew_mar.in', lines_data)
 #  rp.ares_make_mine_opt(path,'../linelistDir/full_linelist.dat')
 #  rp.run_ares(path)
 
