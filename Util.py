@@ -1,12 +1,10 @@
 #!/usr/bin/python
-## My first python code
-
-##imports:
 
 import numpy as np
 
-## Functions from the internet:
-  
+
+# Functions from the internet:
+# TODO: This is from astropy.stats. Why not just import and use it? It is easy to install..
 def sigma_clip(data, sig=3, iters=1, cenfunc=np.median, varfunc=np.var,
                maout=False):
     """ Perform sigma-clipping on the provided data.
@@ -93,7 +91,7 @@ def sigma_clip(data, sig=3, iters=1, cenfunc=np.median, varfunc=np.var,
             do = data - cenfunc(data[mask])
             mask = do * do <= varfunc(data[mask]) * sig ** 2
         iters = i + 1
-        #TODO: ?print iters to the log if iters was None?
+        # TODO: ?print iters to the log if iters was None?
     else:
         for i in range(iters):
             do = data - cenfunc(data[mask])
@@ -102,19 +100,4 @@ def sigma_clip(data, sig=3, iters=1, cenfunc=np.median, varfunc=np.var,
     if maout:
         return np.ma.MaskedArray(data, ~mask, copy=maout != 'inplace')
     else:
-        return data[mask], mask.reshape(oldshape)  
-
-
-
-## My functions:
-
-
-
-### Main program:
-def main():
-  print "Hello"
-  
-
-if __name__ == "__main__":
-    main()
-
+        return data[mask], mask.reshape(oldshape)
