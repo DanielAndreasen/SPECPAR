@@ -206,7 +206,10 @@ def run_chain_get_element_abund(moogfile, element):
 ### Main program:
 def main():
 
-  run_chain_parameters()
+  print "Testing eclipse push"
+#  run_chain_parameters()
+
+
 #  run_chain_tmcalc()
 #  print run_chain_get_element_abund('save_folder/Out_moog_lines.sun.ares_new','Ti')
    
