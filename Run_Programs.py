@@ -18,6 +18,7 @@ def get_install_dir():
 
 
 def ares_make_mine_opt(path, linelist_ew):
+    local_install_path="/home/daniel/GIT/FORKS/SPECPAR-daniel/"
     """
     Read the parameters from the configuration file and
     build a local 'mine.opt' file to run the ARES code
