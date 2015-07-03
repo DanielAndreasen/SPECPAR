@@ -21,19 +21,24 @@ import Run_Programs as rp
 
 
 # My functions:
-def run_moog(teff, logg, metal, vtur):
-    run_moog_kurucz(teff, logg, metal, vtur)
-#  run_moog_marcs(teff, logg, metal, vtur)
+def run_moog(teff, logg, metal, vtur, model='kurucz'):
+    if model == 'kurucz':
+        run_moog_kurucz(teff, logg, metal, vtur)
+    elif model == 'marcs':
+        run_moog_marcs(teff, logg, metal, vtur)
+    else:
+        raise NotImplementedError('The following model is not implemented: %s' % model)
 
 
+# TODO: Put the two functions below under one. Maybe with the one above.
 def run_moog_kurucz(teff, logg, metal, vtur):
     rp.create_model_kurucz('./', teff, logg, metal, vtur)
     rp.run_MOOG('./', 'abfind.par')
 
 
-# def run_moog_marcs(teff, logg, metal, vtur):
-#     os.system('interpol_marcs %s %s %s %s' % (teff, logg, metal, vtur))
-#     os.system('echo abfind.par | ' + moogcommand)
+def run_moog_marcs(teff, logg, metal, vtur):
+    os.system('interpol_marcs %s %s %s %s' % (teff, logg, metal, vtur))
+    os.system('echo abfind.par | ' + moogcommand)
 
 
 def readmoog(filename):
@@ -43,6 +48,7 @@ def readmoog(filename):
     with open(filename) as f:
         lines = f.readlines()
 
+    # TODO: Remove this stupid re in the code.
     expr1 = re.compile('Teff')
     expr2 = re.compile('#lines')
     expr3 = re.compile('correlation')
@@ -137,29 +143,31 @@ def lsq(x, y):
     Fit line y2=$a*x2+$b to x & y
     and calculate rms residual
     """
+    # TODO: I'm sure there is a way to do this with scipy/numpy in 1 line!
+    x = np.asarray(x)
+    y = np.asarray(y)
+
     n = len(x)
-    sx = sum(x)
+    sx = np.sum(x)
     sy = np.sum(y)
 
     x2 = np.mean(x)
     y2 = np.mean(y)
 
-    xy = [(i-x2)*(j-y2) for i, j in zip(x, y)]
-    sxy = sum(xy)
+    sxy = np.sum((x-x2) * (y-y2))
 
-    xx = [(i-x2)*(i-x2) for i in x]
-    sxx = sum(xx)
+    sxx = sum((x-x2)**2)
 
     a = sxy / sxx
     b = y2 - a * x2
 
-    axby = [j - a*i - b for i, j in zip(x, y)]
-    axby2 = [i*i for i in axby]
+    axby = y - (a*x + b)
+    axby2 = axby**2
 
-    chi2 = sum(axby2)
+    chi2 = np.sum(axby2)
 
-    sig_a = math.sqrt(chi2 / ((n-2)*sxx))
-    sig_b = sig_a * math.sqrt(sxx/n + sx*sx / (n*n))
+    sig_a = np.sqrt(chi2 / ((n-2)*sxx))
+    sig_b = sig_a * np.sqrt(sxx/n + sx*sx / (n*n))
 
     return a, b, sig_a, sig_b
 
@@ -178,7 +186,8 @@ def error(filename, fix_logg=False):
     logg = logout[1]
     vt = logout[2]
     metal = logout[3]
-    abundfe = (logout[5] + logout[8])/2.
+    abundfe = logout[5]
+    # abundfe = (logout[5] + logout[8])/2.
     sigmafe1 = logout[6]/np.sqrt(logout[4])
     sigmafe2 = logout[9]/np.sqrt(logout[7])
 
@@ -265,6 +274,12 @@ def error(filename, fix_logg=False):
     # Add them quadratically
     print sigmafe1, deltafe1teff, deltafe1micro
     errormetal = math.sqrt(sigmafe1**2 + deltafe1teff**2 + deltafe1micro**2)
+
+    teff, errorteff = int(teff), int(errorteff)
+    logg, errorlogg = round(logg, 2), round(errorlogg, 2)
+    vt, errorvt = round(vt, 2), round(errormicro, 2)
+    metal, errormetal = round(metal, 2), round(errormetal, 2)
+    logg, errorlogg = round(logg, 2), round(errorlogg, 2)
 
     result = (teff, errorteff, logg, errorlogg, vt, errormicro, metal,
               errormetal, logout[4], logout[7], logout[6], logout[9])
@@ -385,8 +400,7 @@ def main():
     moogfiles = glob('Out*')
     n = len(moogfiles)
 
-    hdr = 'Name   Teff    errTeff logg    errlogg     v   \
-           errv    [M/H]   err[M/H]\n'
+    hdr = 'Name   Teff    errTeff logg    errlogg     v     errv    [M/H]   err[M/H]\n'
     with open('finalerrors', 'w') as bla:
         bla.write(hdr)
 
@@ -399,12 +413,9 @@ def main():
         print 'Microturbulence: %.2f +- %.2f' % (err[4], err[5])
         print 'Metallicity: %.2f +- %.2f' % (err[6], err[7])
         print '-' * 42
+
         with open('finalerrors', 'a') as bla:
-            tmp = map(str, err)
-            bla.write(str(moogfile)+' '*4+tmp[0]+' '*4 + tmp[1] +
-                      ' '*4+tmp[2]+' '*4+tmp[3] +
-                      ' '*4+tmp[4]+' '*4+tmp[5] +
-                      ' '*4+tmp[6]+' '*4+tmp[7] + '\n')
+            bla.write('%s\t%i\t%i\t%.2f\t%.2f\t%.2f\t%.2f\t%.2f\t%.2f\n'  % (moogfile, err[0], err[1], err[2], err[3], err[4], err[5], err[6], err[7]))
 
         with open('file_out.rdb', 'a') as bla:
             bla.write('%s\t%4d\t%4d\t%5.2f\t%5.2f\t%5.2f\
@@ -415,11 +426,11 @@ def main():
                                           err[6], err[7],
                                           err[8], err[9],
                                           err[10], err[11]))
-        #plots(moogfile, True, err)
+        plots(moogfile, True, err)
 
-    #os.system('cat *.eps > tmp.eps')
-    #os.system('ps2pdf tmp.eps plot_all.pdf')
-    #os.system('rm *.eps')
+    os.system('cat *.eps > tmp.eps')
+    os.system('ps2pdf tmp.eps plot_all.pdf')
+    os.system('rm *.eps')
 
 if __name__ == "__main__":
     main()
