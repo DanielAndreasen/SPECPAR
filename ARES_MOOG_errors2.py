@@ -16,7 +16,7 @@ import math
 import numpy as np
 import os
 import matplotlib.pyplot as plt
-import glob
+from glob import glob
 import Run_Programs as rp
 
 
@@ -49,21 +49,21 @@ def readmoog(filename):
     expr4 = re.compile('OH NO')
     Felines = ''
     Correlation = ''
-    extraline = 'no'
+    extraline = False
     atmparam = ''
     for line in lines:
         match1 = expr1.search(line)
-        if match1 is None:
+        if match1 is not None:
             atmparam = match1.string
         match2 = expr2.search(line)
-        if match2 is None:
+        if match2 is not None:
             Felines += match2.string
         match3 = expr3.search(line)
-        if match3 is None:
+        if match3 is not None:
             Correlation += match3.string
         match4 = expr4.search(line)
-        if match4 is None:
-            extraline = 'yes'
+        if match4 is not None:
+            extraline = True
 
     atmparam = atmparam.split()
     teff = float(atmparam[1])
@@ -71,20 +71,15 @@ def readmoog(filename):
     vt = float(atmparam[6])
     metal = float((atmparam[-1].split('='))[-1])
 
-#    if len(atmparam) == 9:
-#      metal = float(atmparam[8])
-#    if len(atmparam) == 8:
-#      print atmparam[7]
-#      metal = float((atmparam[7])[4:])
     Felines = Felines.split()
 
-    nfe1 = float(Felines[10])
-    nfe2 = float(Felines[21])
+    nfe1 = int(Felines[10])
+    nfe2 = int(Felines[21])
     fe1 = float(Felines[3])
     sigfe1 = float(Felines[7])
     fe2 = float(Felines[14])
     sigfe2 = float(Felines[18])
-    correlation = correlation.split()
+    correlation = Correlation.split()
     slopeEP = float(correlation[4])
     # This will catch when you don't have RW statistics in the output,
     # later below it will derive our own slope in this case
@@ -110,7 +105,7 @@ def readmoog(filename):
         offset1.append(float(line[6].strip('\n')))
         lam1.append(float(line[0]))
 
-    if extraline == 'yes':
+    if extraline:
         linesFe2 = lines[int(nfe1)+14:int(nfe1)+14+int(nfe2)]
     else:
         linesFe2 = lines[int(nfe1)+13:int(nfe1)+13+int(nfe2)]
@@ -234,7 +229,7 @@ def error(filename, fix_logg=False):
 
     # Error on temperature (assume the variation on the slope is linear
     # with the error)
-    errorteff = abs(errorslopeEP/logoutteff[10]) * 100.
+    errorteff = abs(errorslopeEP/logoutteff[10]) * 100
 
     # Determine the variation of FeI
     deltafe1teff = abs((errorteff/100.) * (logoutteff[5]-abundfe))
@@ -268,7 +263,7 @@ def error(filename, fix_logg=False):
 
     # Take into account the dispersion errors on FeI by teff and vt errors
     # Add them quadratically
-
+    print sigmafe1, deltafe1teff, deltafe1micro
     errormetal = math.sqrt(sigmafe1**2 + deltafe1teff**2 + deltafe1micro**2)
 
     result = (teff, errorteff, logg, errorlogg, vt, errormicro, metal,
@@ -302,7 +297,7 @@ def plots(filename, err, par):
     xfit = [min(ep1) - 0.1, max(ep1) + 0.1]
     fit = [a * i + b for i in xfit]
     ax = plt.axes([.1, .7, .8, .2])
-    plt.scatter(ep1, abund1, 'ok', s=25)
+    plt.scatter(ep1, abund1, marker='o', color='k', s=25)
     plt.xlabel('EP (eV)')
     plt.ylabel('log FeI')
     plt.plot(xfit, fit, '-k')
@@ -313,7 +308,7 @@ def plots(filename, err, par):
     xfit = [min(logrw1) - 0.1, max(logrw1) + 0.1]
     fit = [a * i + b for i in xfit]
     ax = plt.axes([.1, .4, .8, .2])
-    plt.scatter(logrw1, abund1, 'ok', s=25)
+    plt.scatter(logrw1, abund1, marker='o', color='k', s=25)
     plt.xlabel('log RW')
     plt.ylabel('log FeI')
     plt.plot(xfit, fit, '-k')
@@ -321,7 +316,7 @@ def plots(filename, err, par):
 
     # Make the plot FeII vs EP
     ax = plt.axes([.1, .1, .3, .2])
-    plt.scatter(ep2, abund2, 'ok', s=25)
+    plt.scatter(ep2, abund2, marker='o', color='k', s=25)
     plt.xlabel('EP (eV)')
     plt.ylabel('log FeII')
 
@@ -396,18 +391,17 @@ def main():
         bla.write(hdr)
 
     for moogfile in moogfiles:
-        err = error(moogfile.strip())
-        print 'OIOIOI: %i' % len(err[0])
+        err = error(moogfile.strip(), fix_logg=True)
 
         print moogfile
-        print 'Temperature: %s +- %s' % (err[0], err[1])
-        print 'logg: %s +- %s' % (err[2], err[3])
-        print 'Microturbulence: %s +- %s' % (err[4], err[5])
-        print 'Metallicity: %s +- %s' % (err[6], err[7])
+        print 'Temperature: %i +- %i' % (err[0], err[1])
+        print 'logg: %.2f +- %.2f' % (err[2], err[3])
+        print 'Microturbulence: %.2f +- %.2f' % (err[4], err[5])
+        print 'Metallicity: %.2f +- %.2f' % (err[6], err[7])
         print '-' * 42
         with open('finalerrors', 'a') as bla:
             tmp = map(str, err)
-            bla.write(str(moogile)+' '*4+tmp[0]+' '*4 + tmp[1] +
+            bla.write(str(moogfile)+' '*4+tmp[0]+' '*4 + tmp[1] +
                       ' '*4+tmp[2]+' '*4+tmp[3] +
                       ' '*4+tmp[4]+' '*4+tmp[5] +
                       ' '*4+tmp[6]+' '*4+tmp[7] + '\n')
@@ -415,17 +409,17 @@ def main():
         with open('file_out.rdb', 'a') as bla:
             bla.write('%s\t%4d\t%4d\t%5.2f\t%5.2f\t%5.2f\
                        \t%5.2f\t%5.2f\t%5.2f\t%3d\t%3d\t\
-                       %5.2f\t%5.2f\n' % (moogile, err[0], err[1],
+                       %5.2f\t%5.2f\n' % (moogfile, err[0], err[1],
                                           err[2], err[3],
                                           err[4], err[5],
                                           err[6], err[7],
                                           err[8], err[9],
                                           err[10], err[11]))
-        plots(moogile, True, err)
+        #plots(moogfile, True, err)
 
-    os.system('cat *.eps > tmp.eps')
-    os.system('ps2pdf tmp.eps plot_all.pdf')
-    os.system('rm *.eps')
+    #os.system('cat *.eps > tmp.eps')
+    #os.system('ps2pdf tmp.eps plot_all.pdf')
+    #os.system('rm *.eps')
 
 if __name__ == "__main__":
     main()

@@ -3,16 +3,16 @@
 import subprocess
 import os
 import ReadConfig as rc
-import tmcalc_module as tm
+# import tmcalc_module as tm
 import sys
-sys.path.insert(0, get_install_dir()+'tmcalc_cython')
+#sys.path.insert(0, get_install_dir()+'tmcalc_cython')
 
 
 def get_install_dir():
     """
     Set the local variables with the instalation path
     """
-    local_install_path = "/home/sousasag/Programas/GIT_projects/SPECPAR/"
+    local_install_path = "/home/daniel/GIT/FORKS/SPECPAR-daniel/"
     # return read_config_install('specpar','install_path')
     return local_install_path
 
@@ -53,8 +53,9 @@ def run_ares(path):
 def create_model_kurucz(path, teff, logg, feh, vtur):
     owd = os.getcwd()
     os.chdir(path)
-    command = get_install_dir()+'interpol_models/make_model_gfortran.bash '+str(teff)+' '+str(logg)+' '+str(feh)+' '+str(vtur)
-    process = subprocess.Popen(command, shell=True)
+    path = get_install_dir()
+    cmd = '%sinterpol_models/make_model_gfortran.bash %s %s %s %s > /dev/null' % (path, teff, logg, feh, vtur)
+    process = subprocess.Popen(cmd, shell=True)
     process.wait()
     os.chdir(owd)
 
